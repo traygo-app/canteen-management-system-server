@@ -63,6 +63,7 @@ REMOTE_APPS = [
     "rest_framework_simplejwt.token_blacklist",
     "imagekit",
     "corsheaders",
+    "sendgrid_backend",
 ]
 
 LOCAL_APPS = [
@@ -102,23 +103,28 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8000",
     "http://localhost:8080",
+    "https://localhost",
+    "https://api.traygo.app",
+    "https://traygo.app",
 ]
 CORS_ALLOW_CREDENTIALS = True
 
 # CSRF_COOKIE_SECURE = not DEBUG
 # CSRF_COOKIE_SAMESITE = "Lax"
 
-# CSRF_TRUSTED_ORIGINS = [
-#     "http://localhost:8000",
-#     "http://localhost:8080",
-# ]
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:8000",
+    "http://localhost:8080",
+    "https://api.traygo.app",
+    "https://traygo.app",
+]
 
 ROOT_URLCONF = "config.urls"
 
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [BASE_DIR / "templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -145,19 +151,30 @@ REST_FRAMEWORK = {
     "DEFAULT_FILTER_BACKENDS": ("django_filters.rest_framework.DjangoFilterBackend",),
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
     "PAGE_SIZE": 20,
+    "DEFAULT_THROTTLE_CLASSES": [
+        "rest_framework.throttling.AnonRateThrottle",
+        "apps.common.throttling.UnverifiedUserThrottle",
+        "apps.common.throttling.VerifiedUserThrottle",
+    ],
+    "DEFAULT_THROTTLE_RATES": {
+        "anon": "5/minute",
+        "unverified": "20/minute",
+        "verified": "100/minute",
+    },
+    "NUM_PROXIES": 1,
 }
 
 SPECTACULAR_SETTINGS = {
-    "TITLE": "UTM Canteen API",
+    "TITLE": "Traygo API",
     "DESCRIPTION": "Buy grechka, borsch and kompot easily.",
     "VERSION": "1.0.0",
     "SERVE_INCLUDE_SCHEMA": False,
     "SCHEMA_PATH_PREFIX": r"/api/v1",
     "SERVERS": [
-        {"url": "http://localhost:8000", "description": "Development server"},
+        {"url": "https://api.traygo.app", "description": "Deployed server"},
+        {"url": "http://localhost:8000", "description": "Local Development server"},
     ],
 }
-
 UNFOLD = {
     "SITE_TITLE": "TrayGo administration",
     "SITE_HEADER": "TrayGo administration",
@@ -265,7 +282,6 @@ UNFOLD = {
     },
 }
 
-
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
@@ -313,6 +329,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = "static/"
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -322,16 +340,31 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 RBAC_FORCE_UPDATE_PERMISSIONS = False
 
 # Email backend
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = env("SMTP_HOST")
-EMAIL_PORT = env("SMTP_PORT")
-EMAIL_USE_TLS = False
-EMAIL_USE_SSL = False
-DEFAULT_FROM_EMAIL = "no-reply@canteen.utm.md"
+SMTP_HOST = env("SMTP_HOST", default="")
+SENDGRID_API_KEY = env("SENDGRID_API_KEY", default="")
+
+if SENDGRID_API_KEY:
+    EMAIL_BACKEND = "sendgrid_backend.SendgridBackend"
+    SENDGRID_API_KEY = SENDGRID_API_KEY
+    SENDGRID_SANDBOX_MODE_IN_DEBUG = env("SENDGRID_SANDBOX_MODE_IN_DEBUG", default=True, cast=bool)
+elif SMTP_HOST:
+    EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+    EMAIL_HOST = SMTP_HOST
+    EMAIL_PORT = env("SMTP_PORT", default=587, cast=int)
+    EMAIL_HOST_USER = env("SMTP_USER", default="")
+    EMAIL_HOST_PASSWORD = env("SMTP_PASS", default="")
+    EMAIL_USE_TLS = env("EMAIL_USE_TLS", default=True, cast=bool)
+    EMAIL_USE_SSL = env("EMAIL_USE_SSL", default=False, cast=bool)
+else:
+    # Use console backend for development when email is not configured
+    EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL", default="noreply@traygo.app")
 
 # Redis
 REDIS_HOST = env("REDIS_HOST", default="localhost")
 REDIS_PORT = env("REDIS_PORT", default=6379, cast=int)
+REDIS_PASSWORD = env("REDIS_PASSWORD", default="")
 
 # MFA
 MFA_FERNET_KEY = env("MFA_FERNET_KEY", default="")

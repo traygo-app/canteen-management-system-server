@@ -6,8 +6,10 @@ from drf_spectacular.views import (
     SpectacularSwaggerView,
 )
 
+from apps.common.views import health_check
+
 swagger_urls = [
-    path("schema/swagger-ui/", SpectacularSwaggerView.as_view(url_name="schema"), name="swagger-ui"),
+    path("", SpectacularSwaggerView.as_view(url_name="schema"), name="swagger-ui"),
     path("schema/", SpectacularAPIView.as_view(), name="schema"),
     path("schema/redoc/", SpectacularRedocView.as_view(url_name="schema"), name="redoc"),
 ]
@@ -23,6 +25,7 @@ api_urls = [
 ]
 
 urlpatterns = [
+    path("health", health_check, name="health-check"),
     path("admin/", admin.site.urls),
     path("", include(api_urls)),
 ]
