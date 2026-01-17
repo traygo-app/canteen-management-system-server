@@ -12,12 +12,16 @@ services:
       - POSTGRES_DB=$SQL_DATABASE
 
   web:
-    build: .
+    build:
+      context: .
+      dockerfile: ./deployment/Dockerfile
     container_name: canteen_ms
     image: canteen-django:dev
     env_file: .env
     ports:
       - "8000:8000"
+    command:
+      - /deployment/scripts/start-django-dev.sh
     depends_on:
       db:
         condition: service_started
@@ -38,8 +42,7 @@ services:
           path: ./pyproject.toml
 
         - action: rebuild
-          path: ./Dockerfile
-
+          path: ./deployment/Dockerfile
   mailhog:
     image: mailhog/mailhog
     container_name: mailhog
