@@ -4,6 +4,7 @@ from django.conf import settings
 redis_client = redis.StrictRedis(
     host=settings.REDIS_HOST,
     port=settings.REDIS_PORT,
+    password=settings.REDIS_PASSWORD,
     db=0,
     decode_responses=True,
     socket_connect_timeout=5,
