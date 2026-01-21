@@ -1,0 +1,62 @@
+[
+  {
+    "model": "menus.category",
+    "pk": "a8ccd496-6109-4805-a892-cc00c317eff4",
+    "fields": {
+      "created_at": "2025-09-19T08:00:00Z",
+      "updated_at": "2025-09-19T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "name": "Main Courses",
+      "display_order": 1
+    }
+  },
+  {
+    "model": "menus.category",
+    "pk": "bbddc12b-1fd3-42bc-9d74-6b8d507cb901",
+    "fields": {
+      "created_at": "2025-09-19T08:00:00Z",
+      "updated_at": "2025-09-19T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "name": "Soups",
+      "display_order": 2
+    }
+  },
+  {
+    "model": "menus.category",
+    "pk": "14679d81-3d48-4ae1-b84e-0de976ea73b9",
+    "fields": {
+      "created_at": "2025-09-19T08:00:00Z",
+      "updated_at": "2025-09-19T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "name": "Salads",
+      "display_order": 3
+    }
+  },
+  {
+    "model": "menus.category",
+    "pk": "26193ba6-0135-4eda-9bb0-52f6d69fc241",
+    "fields": {
+      "created_at": "2025-09-19T08:00:00Z",
+      "updated_at": "2025-09-19T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "name": "Beverages",
+      "display_order": 4
+    }
+  },
+  {
+    "model": "menus.category",
+    "pk": "41bc2eb9-6ee6-4692-9635-1872c9ef2d01",
+    "fields": {
+      "created_at": "2025-09-19T08:00:00Z",
+      "updated_at": "2025-09-19T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "name": "Desserts",
+      "display_order": 5
+    }
+  }
+]

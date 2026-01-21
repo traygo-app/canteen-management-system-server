@@ -1,0 +1,310 @@
+[
+  {
+    "model": "menus.item",
+    "pk": "05d9668c-131c-45f2-89be-9e138e9f9ead",
+    "fields": {
+      "created_at": "2025-09-10T08:00:00Z",
+      "updated_at": "2025-09-10T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "bbddc12b-1fd3-42bc-9d74-6b8d507cb901",
+      "name": "Chicken Noodle Soup",
+      "description": "Homestyle chicken soup with vegetables and noodles",
+      "base_price": "8.50"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "1032dbdb-17bd-48ac-b9a8-8e420e956e64",
+    "fields": {
+      "created_at": "2025-09-10T08:00:00Z",
+      "updated_at": "2025-09-10T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "41bc2eb9-6ee6-4692-9635-1872c9ef2d01",
+      "name": "New York Cheesecake",
+      "description": "Classic creamy cheesecake with berry compote",
+      "base_price": "7.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "13041d3f-d777-4d7f-ae77-187091dd20dd",
+    "fields": {
+      "created_at": "2025-09-10T08:00:00Z",
+      "updated_at": "2025-09-10T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "14679d81-3d48-4ae1-b84e-0de976ea73b9",
+      "name": "Greek Salad",
+      "description": "Fresh vegetables with feta cheese and olives",
+      "base_price": "10.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "15483e77-82df-41fa-a90f-d2363902a1ca",
+    "fields": {
+      "created_at": "2025-09-10T08:00:00Z",
+      "updated_at": "2025-09-10T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "53927f88-a8a7-42f0-829d-d768a441078b",
+      "name": "Steamed Rice",
+      "description": "Fluffy jasmine rice, perfectly steamed",
+      "base_price": "3.50"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "1a350fd0-b57d-4edf-8fe0-0673ae059964",
+    "fields": {
+      "created_at": "2025-09-10T08:00:00Z",
+      "updated_at": "2025-09-10T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "26193ba6-0135-4eda-9bb0-52f6d69fc241",
+      "name": "Fresh Orange Juice",
+      "description": "100% freshly squeezed orange juice",
+      "base_price": "4.50"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "24dfbc5b-310f-44a6-b563-c5a15abb6501",
+    "fields": {
+      "created_at": "2025-09-10T08:00:00Z",
+      "updated_at": "2025-09-10T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "a8ccd496-6109-4805-a892-cc00c317eff4",
+      "name": "Classic Burger",
+      "description": "Beef patty with lettuce, tomato, and onion",
+      "base_price": "12.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "25027e89-8685-4a73-8a53-243f56312d26",
+    "fields": {
+      "created_at": "2025-09-10T08:00:00Z",
+      "updated_at": "2025-09-10T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "a8ccd496-6109-4805-a892-cc00c317eff4",
+      "name": "Pasta Primavera",
+      "description": "Fresh pasta with seasonal vegetables",
+      "base_price": "13.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "348e2cc6-a7b8-4d21-9a42-b29513a54167",
+    "fields": {
+      "created_at": "2025-09-10T08:00:00Z",
+      "updated_at": "2025-09-10T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "26193ba6-0135-4eda-9bb0-52f6d69fc241",
+      "name": "Fresh Brewed Coffee",
+      "description": "Premium arabica coffee, freshly brewed",
+      "base_price": "3.50"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "52b5be54-97f6-4291-b0a3-a26cb3bced06",
+    "fields": {
+      "created_at": "2025-09-10T08:00:00Z",
+      "updated_at": "2025-09-10T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "53927f88-a8a7-42f0-829d-d768a441078b",
+      "name": "Seasonal Vegetables",
+      "description": "Fresh seasonal vegetables, lightly seasoned",
+      "base_price": "5.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "6d774162-8257-4807-b9ba-1146a707bcfc",
+    "fields": {
+      "created_at": "2025-09-10T08:00:00Z",
+      "updated_at": "2025-09-10T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "14679d81-3d48-4ae1-b84e-0de976ea73b9",
+      "name": "Fresh Fruit Salad",
+      "description": "Seasonal fruits with honey yogurt dressing",
+      "base_price": "7.50"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "78e9bee0-2209-45c5-b17d-30fe12e0b6cc",
+    "fields": {
+      "created_at": "2025-09-10T08:00:00Z",
+      "updated_at": "2025-09-10T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "41bc2eb9-6ee6-4692-9635-1872c9ef2d01",
+      "name": "Chocolate Cake",
+      "description": "Rich chocolate cake with chocolate ganache",
+      "base_price": "6.50"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "7dc22bce-d32c-4eef-b812-c1c2fe760f0e",
+    "fields": {
+      "created_at": "2025-09-10T08:00:00Z",
+      "updated_at": "2025-09-10T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "a8ccd496-6109-4805-a892-cc00c317eff4",
+      "name": "Grilled Chicken Breast",
+      "description": "Tender chicken breast with herbs and spices",
+      "base_price": "14.50"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "836d20b5-2f37-429a-b6b6-c695cb00a5fe",
+    "fields": {
+      "created_at": "2025-09-10T08:00:00Z",
+      "updated_at": "2025-09-10T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "41bc2eb9-6ee6-4692-9635-1872c9ef2d01",
+      "name": "Fresh Berry Parfait",
+      "description": "Layers of fresh berries and vanilla yogurt",
+      "base_price": "5.50"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "b95f4258-c424-45d3-b2e7-42d1acdca89c",
+    "fields": {
+      "created_at": "2025-09-10T08:00:00Z",
+      "updated_at": "2025-09-10T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "ba7e27a6-6fd0-472f-bfa5-3dce41862787",
+      "name": "Fluffy Pancakes",
+      "description": "Light and fluffy pancakes served with maple syrup",
+      "base_price": "8.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "c29643f1-807e-47f8-a3ca-b1478af4b16a",
+    "fields": {
+      "created_at": "2025-09-10T08:00:00Z",
+      "updated_at": "2025-09-10T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "53927f88-a8a7-42f0-829d-d768a441078b",
+      "name": "French Fries",
+      "description": "Crispy golden french fries with sea salt",
+      "base_price": "4.50"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "c6e0679f-e68a-4846-9631-99c60d14e72f",
+    "fields": {
+      "created_at": "2025-09-10T08:00:00Z",
+      "updated_at": "2025-09-10T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "ba7e27a6-6fd0-472f-bfa5-3dce41862787",
+      "name": "Steel Cut Oatmeal",
+      "description": "Creamy steel cut oats with brown sugar and cinnamon",
+      "base_price": "6.50"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "ca756d81-0590-4b62-be0e-773a7b81ebfe",
+    "fields": {
+      "created_at": "2025-09-10T08:00:00Z",
+      "updated_at": "2025-09-10T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "26193ba6-0135-4eda-9bb0-52f6d69fc241",
+      "name": "Herbal Tea Selection",
+      "description": "Choice of chamomile, peppermint, or green tea",
+      "base_price": "3.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "d267b400-78cf-4096-aa83-64ac90e9c484",
+    "fields": {
+      "created_at": "2025-09-10T08:00:00Z",
+      "updated_at": "2025-09-10T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "14679d81-3d48-4ae1-b84e-0de976ea73b9",
+      "name": "Caesar Salad",
+      "description": "Crisp romaine lettuce with parmesan and croutons",
+      "base_price": "9.50"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "ddb3b989-7eab-41aa-9516-03d32bd94112",
+    "fields": {
+      "created_at": "2025-09-10T08:00:00Z",
+      "updated_at": "2025-09-10T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "a8ccd496-6109-4805-a892-cc00c317eff4",
+      "name": "Pan-Seared Salmon",
+      "description": "Fresh salmon with lemon butter sauce",
+      "base_price": "16.50"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "e0465f7e-fc94-487b-af4a-7116da07d8bb",
+    "fields": {
+      "created_at": "2025-09-10T08:00:00Z",
+      "updated_at": "2025-09-10T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "ba7e27a6-6fd0-472f-bfa5-3dce41862787",
+      "name": "Whole Grain Toast",
+      "description": "Freshly baked whole grain bread with butter",
+      "base_price": "3.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "f0f6657b-db57-46b7-98fd-3b72955abb48",
+    "fields": {
+      "created_at": "2025-09-10T08:00:00Z",
+      "updated_at": "2025-09-10T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "ba7e27a6-6fd0-472f-bfa5-3dce41862787",
+      "name": "Scrambled Eggs",
+      "description": "Fresh farm eggs scrambled to perfection",
+      "base_price": "5.50"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "fd36ada9-612c-4c1c-85e5-457fa02a8d62",
+    "fields": {
+      "created_at": "2025-09-10T08:00:00Z",
+      "updated_at": "2025-09-10T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "bbddc12b-1fd3-42bc-9d74-6b8d507cb901",
+      "name": "Tomato Basil Soup",
+      "description": "Rich tomato soup with fresh basil",
+      "base_price": "7.00"
+    }
+  }
+]

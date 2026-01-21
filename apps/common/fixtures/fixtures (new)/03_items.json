@@ -1,0 +1,114 @@
+[
+  {
+    "model": "menus.item",
+    "pk": "11111111-1111-1111-1111-111111111111",
+    "fields": {
+      "created_at": "2025-09-19T08:00:00Z",
+      "updated_at": "2025-09-19T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "a8ccd496-6109-4805-a892-cc00c317eff4",
+      "name": "Grechka with Chicken",
+      "description": "Traditional buckwheat with grilled chicken breast",
+      "base_price": "45.50"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "22222222-2222-2222-2222-222222222222",
+    "fields": {
+      "created_at": "2025-09-19T08:00:00Z",
+      "updated_at": "2025-09-19T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "a8ccd496-6109-4805-a892-cc00c317eff4",
+      "name": "Mici with Mamaliga",
+      "description": "Grilled sausages with polenta",
+      "base_price": "52.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "33333333-3333-3333-3333-333333333333",
+    "fields": {
+      "created_at": "2025-09-19T08:00:00Z",
+      "updated_at": "2025-09-19T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "bbddc12b-1fd3-42bc-9d74-6b8d507cb901",
+      "name": "Borsch",
+      "description": "Traditional beetroot soup with sour cream",
+      "base_price": "28.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "44444444-4444-4444-4444-444444444444",
+    "fields": {
+      "created_at": "2025-09-19T08:00:00Z",
+      "updated_at": "2025-09-19T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "bbddc12b-1fd3-42bc-9d74-6b8d507cb901",
+      "name": "Chicken Soup",
+      "description": "Homemade chicken soup with vegetables",
+      "base_price": "25.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "55555555-5555-5555-5555-555555555555",
+    "fields": {
+      "created_at": "2025-09-19T08:00:00Z",
+      "updated_at": "2025-09-19T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "14679d81-3d48-4ae1-b84e-0de976ea73b9",
+      "name": "Greek Salad",
+      "description": "Fresh tomatoes, cucumbers, olives, and feta cheese",
+      "base_price": "35.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "66666666-6666-6666-6666-666666666666",
+    "fields": {
+      "created_at": "2025-09-19T08:00:00Z",
+      "updated_at": "2025-09-19T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "26193ba6-0135-4eda-9bb0-52f6d69fc241",
+      "name": "Kompot",
+      "description": "Traditional fruit drink",
+      "base_price": "15.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "77777777-7777-7777-7777-777777777777",
+    "fields": {
+      "created_at": "2025-09-19T08:00:00Z",
+      "updated_at": "2025-09-19T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "26193ba6-0135-4eda-9bb0-52f6d69fc241",
+      "name": "Coffee",
+      "description": "Freshly brewed coffee",
+      "base_price": "18.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": "88888888-8888-8888-8888-888888888888",
+    "fields": {
+      "created_at": "2025-09-19T08:00:00Z",
+      "updated_at": "2025-09-19T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": "41bc2eb9-6ee6-4692-9635-1872c9ef2d01",
+      "name": "Papanasi",
+      "description": "Traditional Romanian donuts with sour cream and jam",
+      "base_price": "32.00"
+    }
+  }
+]

@@ -1,0 +1,198 @@
+[
+    {
+      "model": "wallets.transaction",
+      "fields": {
+        "created_at": "2024-01-15T10:00:00Z",
+        "updated_at": "2024-01-15T10:00:00Z",
+        "deleted_at": null,
+        "is_active": true,
+        "type": "deposit",
+        "amount": "500.00",
+        "remaining_balance": "500.00",
+        "balance": "ae292602-a3d0-4bda-93ac-769a63461b39",
+        "order": null
+      }
+    },
+    {
+      "model": "wallets.transaction",
+      "fields": {
+        "created_at": "2024-01-16T09:30:00Z",
+        "updated_at": "2024-01-16T09:30:00Z",
+        "deleted_at": null,
+        "is_active": true,
+        "type": "deposit",
+        "amount": "255.50",
+        "remaining_balance": "755.50",
+        "balance": "ae292602-a3d0-4bda-93ac-769a63461b39",
+        "order": null
+      }
+    },
+    {
+      "model": "wallets.transaction",
+      "fields": {
+        "created_at": "2024-01-16T12:30:00Z",
+        "updated_at": "2024-01-16T12:30:00Z",
+        "deleted_at": null,
+        "is_active": true,
+        "type": "payment",
+        "amount": "-73.50",
+        "remaining_balance": "682.00",
+        "balance": "ae292602-a3d0-4bda-93ac-769a63461b39",
+        "order": "10000001-0000-0000-0000-000000000001"
+      }
+    },
+    {
+      "model": "wallets.transaction",
+      "fields": {
+        "created_at": "2024-01-15T11:15:00Z",
+        "updated_at": "2024-01-15T11:15:00Z",
+        "deleted_at": null,
+        "is_active": true,
+        "type": "deposit",
+        "amount": "600.00",
+        "remaining_balance": "600.00",
+        "balance": "6e653460-2b80-45ed-b878-7619f031042b",
+        "order": null
+      }
+    },
+    {
+      "model": "wallets.transaction",
+      "fields": {
+        "created_at": "2024-01-16T13:00:00Z",
+        "updated_at": "2024-01-16T13:00:00Z",
+        "deleted_at": null,
+        "is_active": true,
+        "type": "payment",
+        "amount": "-85.00",
+        "remaining_balance": "515.00",
+        "balance": "6e653460-2b80-45ed-b878-7619f031042b",
+        "order": "10000001-0000-0000-0000-000000000002"
+      }
+    },
+    {
+      "model": "wallets.transaction",
+      "fields": {
+        "created_at": "2024-01-17T14:00:00Z",
+        "updated_at": "2024-01-17T14:00:00Z",
+        "deleted_at": null,
+        "is_active": true,
+        "type": "refund",
+        "amount": "63.00",
+        "remaining_balance": "745.00",
+        "balance": "ae292602-a3d0-4bda-93ac-769a63461b39",
+        "order": "10000001-0000-0000-0000-000000000003"
+      }
+    },
+    {
+      "model": "wallets.transaction",
+      "fields": {
+        "created_at": "2024-01-18T08:45:00Z",
+        "updated_at": "2024-01-18T08:45:00Z",
+        "deleted_at": null,
+        "is_active": true,
+        "type": "deposit",
+        "amount": "125.00",
+        "remaining_balance": "125.00",
+        "balance": "5d101522-7851-4b2f-9509-525dcf1f55c1",
+        "order": null
+      }
+    },
+    {
+      "model": "wallets.transaction",
+      "fields": {
+        "created_at": "2025-09-20T15:00:00Z",
+        "updated_at": "2025-09-20T15:00:00Z",
+        "deleted_at": null,
+        "is_active": true,
+        "type": "deposit",
+        "amount": "200.00",
+        "remaining_balance": "945.00",
+        "balance": "ae292602-a3d0-4bda-93ac-769a63461b39",
+        "order": null
+      }
+    },
+    {
+      "model": "wallets.transaction",
+      "fields": {
+        "created_at": "2025-09-20T16:00:00Z",
+        "updated_at": "2025-09-20T16:00:00Z",
+        "deleted_at": null,
+        "is_active": true,
+        "type": "deposit",
+        "amount": "150.00",
+        "remaining_balance": "665.00",
+        "balance": "6e653460-2b80-45ed-b878-7619f031042b",
+        "order": null
+      }
+    },
+    {
+      "model": "wallets.transaction",
+      "fields": {
+        "created_at": "2025-09-20T16:32:00Z",
+        "updated_at": "2025-09-20T16:32:00Z",
+        "deleted_at": null,
+        "is_active": true,
+        "type": "payment",
+        "amount": "-45.50",
+        "remaining_balance": "899.50",
+        "balance": "ae292602-a3d0-4bda-93ac-769a63461b39",
+        "order": "10000001-0000-0000-0000-000000000009"
+      }
+    },
+    {
+      "model": "wallets.transaction",
+      "fields": {
+        "created_at": "2025-09-20T16:47:00Z",
+        "updated_at": "2025-09-20T16:47:00Z",
+        "deleted_at": null,
+        "is_active": true,
+        "type": "payment",
+        "amount": "-73.50",
+        "remaining_balance": "591.50",
+        "balance": "6e653460-2b80-45ed-b878-7619f031042b",
+        "order": "10000001-0000-0000-0000-000000000010"
+      }
+    },
+    {
+      "model": "wallets.transaction",
+      "fields": {
+        "created_at": "2025-09-20T17:02:00Z",
+        "updated_at": "2025-09-20T17:02:00Z",
+        "deleted_at": null,
+        "is_active": true,
+        "type": "payment",
+        "amount": "-25.00",
+        "remaining_balance": "100.00",
+        "balance": "5d101522-7851-4b2f-9509-525dcf1f55c1",
+        "order": "10000001-0000-0000-0000-000000000011"
+      }
+    },
+    {
+      "model": "wallets.transaction",
+      "fields": {
+        "created_at": "2025-09-20T17:17:00Z",
+        "updated_at": "2025-09-20T17:17:00Z",
+        "deleted_at": null,
+        "is_active": true,
+        "type": "payment",
+        "amount": "-67.00",
+        "remaining_balance": "832.50",
+        "balance": "ae292602-a3d0-4bda-93ac-769a63461b39",
+        "order": "10000001-0000-0000-0000-000000000012"
+      }
+    },
+    {
+      "model": "wallets.transaction",
+      "fields": {
+        "created_at": "2025-09-20T17:32:00Z",
+        "updated_at": "2025-09-20T17:32:00Z",
+        "deleted_at": null,
+        "is_active": true,
+        "type": "payment",
+        "amount": "-52.00",
+        "remaining_balance": "539.50",
+        "balance": "6e653460-2b80-45ed-b878-7619f031042b",
+        "order": "10000001-0000-0000-0000-000000000013"
+      }
+    }
+  ]

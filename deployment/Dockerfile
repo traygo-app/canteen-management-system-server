@@ -30,10 +30,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends netcat-openbsd 
 
 COPY --from=builder --chown=app:app /app /app
 
-COPY /scripts /scripts
+COPY /deployment/scripts /scripts
 RUN chmod +x /scripts/*.sh
 RUN sed -i 's/\r$//g' /scripts/entrypoint.sh
 RUN sed -i 's/\r$//g' /scripts/wait_db.sh
+RUN sed -i 's/\r$//g' /scripts/start-django-dev.sh
+RUN sed -i 's/\r$//g' /scripts/start-django-prod.sh
 
 ENV PATH="/app/.venv/bin:$PATH"
 ENV DJANGO_SETTINGS_MODULE=config.settings
@@ -41,5 +43,3 @@ ENV DJANGO_SETTINGS_MODULE=config.settings
 EXPOSE 8000
 
 ENTRYPOINT ["/scripts/entrypoint.sh"]
-
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]

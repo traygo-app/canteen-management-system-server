@@ -1,0 +1,107 @@
+[
+    {
+      "model": "users.user",
+      "pk": "0f184b33-8bf1-4de7-9b9b-1106703ffa11",
+      "fields": {
+        "password": "pbkdf2_sha256$1000000$t0sHJi2FP6Ibjc9niALXTf$qdErApoLYB3EEsCM+N5bVyNxLbgNfVRTdB/w8map8og=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-09-17T18:56:13.141Z",
+        "updated_at": "2025-09-17T18:56:13.141Z",
+        "deleted_at": null,
+        "is_active": true,
+        "email": "peter.parker@isa.utm.md",
+        "first_name": "Peter",
+        "last_name": "Parker",
+        "is_staff": false,
+        "role": "customer",
+        "is_verified": true,
+        "groups": [3],
+        "user_permissions": []
+      }
+    },
+    {
+      "model": "users.user",
+      "pk": "3bf302ee-dbb6-45bf-ad71-aa63c0aebf88",
+      "fields": {
+        "password": "pbkdf2_sha256$1000000$Aro0syB0WGKpcZ4puL2boC$LNrh8EM6zoLUY0hEthre0UbbtR8h2adwfD3M8F90Ddk=",
+        "last_login": "2025-09-18T07:08:59.434Z",
+        "is_superuser": false,
+        "created_at": "2025-09-18T07:07:39.964Z",
+        "updated_at": "2025-09-18T07:08:13.742Z",
+        "deleted_at": null,
+        "is_active": true,
+        "email": "staff3000@utm.md",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": true,
+        "role": "staff",
+        "is_verified": true,
+        "groups": [2],
+        "user_permissions": []
+      }
+    },
+    {
+      "model": "users.user",
+      "pk": "5292d25e-f816-433a-8fa8-db3e5c919c2a",
+      "fields": {
+        "password": "pbkdf2_sha256$1000000$dl8Jk4ksVLrlwffwWNMbcS$jN0gzsYKvsnCSnHfW241QWEWDWiTbfoPsm8HtKfvMQ8=",
+        "last_login": "2025-09-16T09:47:53.756Z",
+        "is_superuser": true,
+        "created_at": "2025-09-16T09:47:29.681Z",
+        "updated_at": "2025-09-16T09:47:29.681Z",
+        "deleted_at": null,
+        "is_active": true,
+        "email": "adminpatricia@isa.utm.md",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": true,
+        "role": "admin",
+        "is_verified": true,
+        "groups": [1],
+        "user_permissions": []
+      }
+    },
+    {
+      "model": "users.user",
+      "pk": "5cee7b72-b47f-4d17-a1ad-4daa398b2f8c",
+      "fields": {
+        "password": "pbkdf2_sha256$1000000$np838Qj0H61THMaC3m6Rv2$VMvtBhghmDM0nj5jg6igaow2MUhWhtnbTLUutup4rqc=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-09-17T19:04:45.072Z",
+        "updated_at": "2025-09-17T19:04:45.072Z",
+        "deleted_at": null,
+        "is_active": true,
+        "email": "bruce.wayne@isa.utm.md",
+        "first_name": "Bruce",
+        "last_name": "Wayne",
+        "is_staff": false,
+        "role": "customer",
+        "is_verified": true,
+        "groups": [3],
+        "user_permissions": []
+      }
+    },
+    {
+      "model": "users.user",
+      "pk": "7c5421a4-498c-448a-a300-b344167cd85e",
+      "fields": {
+        "password": "pbkdf2_sha256$1000000$NQvcHoXM1bChxQg8PqNmCZ$JvXFzAxu64S9hWPvPINXOoMUwdQx4uBERAdOh6As3X8=",
+        "last_login": null,
+        "is_superuser": false,
+        "created_at": "2025-09-17T18:29:15.463Z",
+        "updated_at": "2025-09-17T18:29:15.463Z",
+        "deleted_at": null,
+        "is_active": true,
+        "email": "tony.stark@isa.utm.md",
+        "first_name": "Tony",
+        "last_name": "Stark",
+        "is_staff": false,
+        "role": "customer",
+        "is_verified": true,
+        "groups": [3],
+        "user_permissions": []
+      }
+    }
+    ]

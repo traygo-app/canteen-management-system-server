@@ -41,6 +41,7 @@ from apps.authentication.services import (
 )
 from apps.authentication.session_service import SessionService
 from apps.authentication.utils import verify_email_token, verify_password_reset_token
+from apps.common.throttling import SensitiveEndpointThrottle
 
 User = get_user_model()
 
@@ -93,6 +94,7 @@ class CsrfView(APIView):
 class RegisterView(CreateAPIView):
     permission_classes = [AllowAny]
     authentication_classes = []
+    throttle_classes = [SensitiveEndpointThrottle]
 
     queryset = User.objects.all()
     serializer_class = RegisterSerializer
@@ -118,6 +120,7 @@ class RegisterView(CreateAPIView):
 
 class LoginView(TokenObtainPairView):
     serializer_class = CustomTokenObtainPairSerializer
+    throttle_classes = [SensitiveEndpointThrottle]
 
     def post(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
@@ -170,6 +173,7 @@ class EmailVerifyView(APIView):
 class EmailResendView(APIView):
     permission_classes = [AllowAny]
     serializer_class = EmailResendSerializer
+    throttle_classes = [SensitiveEndpointThrottle]
 
     def post(self, request):
         serializer = self.serializer_class(data=request.data)
@@ -399,6 +403,7 @@ class SessionRevokeAllView(APIView):
 class PasswordResetRequestView(APIView):
     permission_classes = [AllowAny]
     serializer_class = PasswordResetRequestSerializer
+    throttle_classes = [SensitiveEndpointThrottle]
 
     def post(self, request):
         serializer = self.serializer_class(data=request.data)

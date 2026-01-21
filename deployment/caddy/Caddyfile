@@ -1,0 +1,78 @@
+{
+	# Global options
+	email {$ACME_EMAIL:admin@example.com}
+
+	# Optional: Use staging CA for testing (uncomment to avoid rate limits during testing)
+	# acme_ca https://acme-staging-v02.api.letsencrypt.org/directory
+}
+
+{$DOMAIN} {
+	# Enable compression
+	encode gzip zstd
+
+	# Security headers
+	header {
+		# Enable HSTS
+		Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+		# Prevent clickjacking
+		X-Frame-Options "DENY"
+		# Prevent content-type sniffing
+		X-Content-Type-Options "nosniff"
+		# XSS Protection
+		X-XSS-Protection "1; mode=block"
+		# Referrer Policy
+		Referrer-Policy "strict-origin-when-cross-origin"
+		# Remove server header
+		-Server
+	}
+
+	# Serve static files directly (Django admin, DRF, collected static)
+	handle /static/* {
+		root * /srv
+		file_server {
+			precompressed gzip
+		}
+	}
+
+	# Health check endpoint (no rate limiting)
+	handle /health {
+		reverse_proxy web:8000
+	}
+
+	# All other requests to Django (with rate limiting)
+	handle {
+		# Rate limit: 100 requests per minute per IP
+		rate_limit {
+			zone dynamic {
+				key {remote_host}
+				events 100
+				window 1m
+			}
+		}
+
+		reverse_proxy web:8000 {
+			# Health check configuration
+			health_uri /health
+			health_interval 10s
+			health_timeout 5s
+
+			# Failure handling
+			fail_duration 30s
+			max_fails 3
+			unhealthy_status 500 502 503
+
+			# Headers
+			header_up Host {host}
+			header_up X-Real-IP {remote_host}
+			header_up X-Forwarded-For {remote_host}
+			header_up X-Forwarded-Proto {scheme}
+		}
+	}
+
+	# Log to stdout (captured by Docker)
+	log {
+		output stdout
+		format console
+		level ERROR
+	}
+}

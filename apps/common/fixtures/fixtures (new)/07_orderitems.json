@@ -1,0 +1,167 @@
+[
+  {
+    "model": "orders.orderitem",
+    "pk": "20000001-0000-0000-0000-000000000001",
+    "fields": {
+      "created_at": "2024-01-16T12:25:00Z",
+      "updated_at": "2024-01-16T12:25:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "order_id": "10000001-0000-0000-0000-000000000001",
+      "menu_item_id": "10000000-0000-0000-0000-000000000001",
+      "quantity": 1,
+      "unit_price": "45.50",
+      "total_price": "45.50"
+    }
+  },
+  {
+    "model": "orders.orderitem",
+    "pk": "20000001-0000-0000-0000-000000000002", 
+    "fields": {
+      "created_at": "2024-01-16T12:25:00Z",
+      "updated_at": "2024-01-16T12:25:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "order_id": "10000001-0000-0000-0000-000000000001",
+      "menu_item_id": "10000000-0000-0000-0000-000000000003",
+      "quantity": 1,
+      "unit_price": "28.00",
+      "total_price": "28.00"
+    }
+  },
+  {
+    "model": "orders.orderitem",
+    "pk": "20000001-0000-0000-0000-000000000003",
+    "fields": {
+      "created_at": "2024-01-16T12:55:00Z",
+      "updated_at": "2024-01-16T12:55:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "order_id": "10000001-0000-0000-0000-000000000002",
+      "menu_item_id": "10000000-0000-0000-0000-000000000002",
+      "quantity": 1,
+      "unit_price": "50.00",
+      "total_price": "50.00"
+    }
+  },
+  {
+    "model": "orders.orderitem",
+    "pk": "20000001-0000-0000-0000-000000000004",
+    "fields": {
+      "created_at": "2024-01-16T12:55:00Z",
+      "updated_at": "2024-01-16T12:55:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "order_id": "10000001-0000-0000-0000-000000000002",
+      "menu_item_id": "10000000-0000-0000-0000-000000000004",
+      "quantity": 1,
+      "unit_price": "35.00",
+      "total_price": "35.00"
+    }
+  },
+  {
+    "model": "orders.orderitem",
+    "pk": "20000001-0000-0000-0000-000000000005",
+    "fields": {
+      "created_at": "2025-09-20T16:32:00Z",
+      "updated_at": "2025-09-20T16:32:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "order_id": "10000001-0000-0000-0000-000000000009",
+      "menu_item_id": "10000000-0000-0000-0000-000000000015",
+      "quantity": 1,
+      "unit_price": "45.50",
+      "total_price": "45.50"
+    }
+  },
+  {
+    "model": "orders.orderitem",
+    "pk": "20000001-0000-0000-0000-000000000006",
+    "fields": {
+      "created_at": "2025-09-20T16:47:00Z",
+      "updated_at": "2025-09-20T16:47:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "order_id": "10000001-0000-0000-0000-000000000010",
+      "menu_item_id": "10000000-0000-0000-0000-000000000015",
+      "quantity": 1,
+      "unit_price": "45.50",
+      "total_price": "45.50"
+    }
+  },
+  {
+    "model": "orders.orderitem",
+    "pk": "20000001-0000-0000-0000-000000000007",
+    "fields": {
+      "created_at": "2025-09-20T16:47:00Z",
+      "updated_at": "2025-09-20T16:47:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "order_id": "10000001-0000-0000-0000-000000000010",
+      "menu_item_id": "10000000-0000-0000-0000-000000000016",
+      "quantity": 1,
+      "unit_price": "28.00",
+      "total_price": "28.00"
+    }
+  },
+  {
+    "model": "orders.orderitem",
+    "pk": "20000001-0000-0000-0000-000000000008",
+    "fields": {
+      "created_at": "2025-09-20T17:02:00Z",
+      "updated_at": "2025-09-20T17:02:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "order_id": "10000001-0000-0000-0000-000000000011",
+      "menu_item_id": "10000000-0000-0000-0000-000000000017",
+      "quantity": 1,
+      "unit_price": "25.00",
+      "total_price": "25.00"
+    }
+  },
+  {
+    "model": "orders.orderitem",
+    "pk": "20000001-0000-0000-0000-000000000009",
+    "fields": {
+      "created_at": "2025-09-20T17:17:00Z",
+      "updated_at": "2025-09-20T17:17:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "order_id": "10000001-0000-0000-0000-000000000012",
+      "menu_item_id": "10000000-0000-0000-0000-000000000019",
+      "quantity": 1,
+      "unit_price": "52.00",
+      "total_price": "52.00"
+    }
+  },
+  {
+    "model": "orders.orderitem",
+    "pk": "20000001-0000-0000-0000-000000000010",
+    "fields": {
+      "created_at": "2025-09-20T17:17:00Z",
+      "updated_at": "2025-09-20T17:17:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "order_id": "10000001-0000-0000-0000-000000000012",
+      "menu_item_id": "10000000-0000-0000-0000-000000000020",
+      "quantity": 1,
+      "unit_price": "15.00",
+      "total_price": "15.00"
+    }
+  },
+  {
+    "model": "orders.orderitem",
+    "pk": "20000001-0000-0000-0000-000000000011",
+    "fields": {
+      "created_at": "2025-09-20T17:32:00Z",
+      "updated_at": "2025-09-20T17:32:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "order_id": "10000001-0000-0000-0000-000000000013",
+      "menu_item_id": "10000000-0000-0000-0000-000000000019",
+      "quantity": 1,
+      "unit_price": "52.00",
+      "total_price": "52.00"
+    }
+  }
+]
