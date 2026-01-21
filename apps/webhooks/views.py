@@ -21,6 +21,7 @@ class StripeWebhookView(APIView):
 
     permission_classes = (HasValidStripeSignature,)
     authentication_classes = ()
+    throttle_classes = []
 
     def post(self, request, *args, **kwargs):
         """
