@@ -160,7 +160,7 @@ REST_FRAMEWORK = {
         "anon": "5/minute",
         "unverified": "20/minute",
         "verified": "100/minute",
-        "sensitive": "5/hour",
+        "sensitive": "1/minute",
     },
     "NUM_PROXIES": 1,
 }
