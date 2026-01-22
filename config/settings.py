@@ -113,8 +113,10 @@ CORS_ALLOWED_ORIGINS = [
 ]
 CORS_ALLOW_CREDENTIALS = True
 
-# CSRF_COOKIE_SECURE = not DEBUG
-# CSRF_COOKIE_SAMESITE = "Lax"
+# CSRF protection settings
+CSRF_COOKIE_SECURE = not DEBUG  # Only send CSRF cookie over HTTPS in production
+CSRF_COOKIE_SAMESITE = "Lax"  # Prevents CSRF attacks from external sites
+CSRF_COOKIE_HTTPONLY = False  # Allow JavaScript to read cookie for API usage
 
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:8000",
