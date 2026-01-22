@@ -1,0 +1,352 @@
+[
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Appetizers"],
+      "name": "Spring Rolls",
+      "description": "Crispy vegetable spring rolls with sweet chili sauce",
+      "base_price": "18.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Appetizers"],
+      "name": "Bruschetta",
+      "description": "Toasted bread with tomatoes, garlic, and basil",
+      "base_price": "22.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Salads"],
+      "name": "Caesar Salad",
+      "description": "Crisp romaine lettuce with caesar dressing and croutons",
+      "base_price": "28.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Salads"],
+      "name": "Greek Salad",
+      "description": "Fresh vegetables with feta cheese and olives",
+      "base_price": "26.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Soups"],
+      "name": "Chicken Noodle Soup",
+      "description": "Homemade chicken soup with vegetables and noodles",
+      "base_price": "22.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Soups"],
+      "name": "Tomato Basil Soup",
+      "description": "Creamy tomato soup with fresh basil",
+      "base_price": "20.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Main Course"],
+      "name": "Grilled Chicken Breast",
+      "description": "Tender grilled chicken breast with herbs",
+      "base_price": "42.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Main Course"],
+      "name": "Pasta Carbonara",
+      "description": "Classic Italian pasta with bacon, eggs, and parmesan",
+      "base_price": "38.50"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Main Course"],
+      "name": "Baked Salmon",
+      "description": "Fresh salmon fillet with lemon butter sauce",
+      "base_price": "56.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Main Course"],
+      "name": "Beef Stew",
+      "description": "Hearty beef stew with potatoes and carrots",
+      "base_price": "45.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Sides"],
+      "name": "French Fries",
+      "description": "Crispy golden french fries",
+      "base_price": "15.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Sides"],
+      "name": "Steamed Vegetables",
+      "description": "Mixed seasonal vegetables",
+      "base_price": "18.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Desserts"],
+      "name": "Chocolate Cake",
+      "description": "Rich chocolate cake with chocolate frosting",
+      "base_price": "25.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Desserts"],
+      "name": "Apple Pie",
+      "description": "Homemade apple pie with cinnamon",
+      "base_price": "22.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Beverages"],
+      "name": "Fresh Orange Juice",
+      "description": "Freshly squeezed orange juice",
+      "base_price": "15.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Beverages"],
+      "name": "Coffee",
+      "description": "Freshly brewed coffee",
+      "base_price": "12.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Beverages"],
+      "name": "Mineral Water",
+      "description": "Still or sparkling mineral water",
+      "base_price": "8.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Appetizers"],
+      "name": "Mozzarella Sticks",
+      "description": "Breaded mozzarella cheese sticks with marinara sauce",
+      "base_price": "24.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Salads"],
+      "name": "Caprese Salad",
+      "description": "Fresh tomatoes, mozzarella, and basil with balsamic glaze",
+      "base_price": "30.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Soups"],
+      "name": "Minestrone Soup",
+      "description": "Italian vegetable soup with pasta and beans",
+      "base_price": "23.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Main Course"],
+      "name": "Vegetarian Lasagna",
+      "description": "Layers of pasta with vegetables and cheese",
+      "base_price": "40.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Main Course"],
+      "name": "Pork Chops",
+      "description": "Grilled pork chops with apple sauce",
+      "base_price": "48.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Sides"],
+      "name": "Mashed Potatoes",
+      "description": "Creamy mashed potatoes with butter",
+      "base_price": "16.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Desserts"],
+      "name": "Tiramisu",
+      "description": "Classic Italian coffee-flavored dessert",
+      "base_price": "28.00"
+    }
+  },
+  {
+    "model": "menus.item",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "category": ["Beverages"],
+      "name": "Iced Tea",
+      "description": "Freshly brewed iced tea with lemon",
+      "base_price": "10.00"
+    }
+  }
+]

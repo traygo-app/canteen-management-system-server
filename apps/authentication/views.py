@@ -1,3 +1,5 @@
+import logging
+
 from django.conf import settings
 from django.contrib.auth import get_user_model
 from django.middleware.csrf import get_token
@@ -41,9 +43,11 @@ from apps.authentication.services import (
 )
 from apps.authentication.session_service import SessionService
 from apps.authentication.utils import verify_email_token, verify_password_reset_token
+from apps.common.logging_utils import get_client_ip, mask_email
 from apps.common.throttling import SensitiveEndpointThrottle
 
 User = get_user_model()
+logger = logging.getLogger(__name__)
 
 COOKIE_NAME = "refresh_token"
 COOKIE_MAX_AGE = 14 * 24 * 3600  # 14 days
@@ -100,19 +104,35 @@ class RegisterView(CreateAPIView):
     serializer_class = RegisterSerializer
 
     def create(self, request, *args, **kwargs):
-        response = super().create(request, *args, **kwargs)
+        client_ip = get_client_ip(request)
+        email = request.data.get("email", "unknown")
 
-        # Send verification email
-        user = User.objects.get(email=response.data["email"])
-        send_verification_email(user)
+        try:
+            response = super().create(request, *args, **kwargs)
 
-        # Create session in whitelist
-        refresh_token_str = response.data.get("refresh")
-        if refresh_token_str:
-            from rest_framework_simplejwt.tokens import RefreshToken
+            # Send verification email
+            user = User.objects.get(email=response.data["email"])
+            send_verification_email(user)
 
-            token = RefreshToken(refresh_token_str)
-            SessionService.create_session(user.id, token["jti"], request)
+            # Create session in whitelist
+            refresh_token_str = response.data.get("refresh")
+            if refresh_token_str:
+                from rest_framework_simplejwt.tokens import RefreshToken
+
+                token = RefreshToken(refresh_token_str)
+                SessionService.create_session(user.id, token["jti"], request)
+
+            logger.info(
+                f"User registration successful: {mask_email(user.email)}",
+                extra={"user_id": user.id, "email": mask_email(user.email), "ip": client_ip},
+            )
+        except Exception as e:
+            logger.error(
+                f"User registration failed: {mask_email(email)}",
+                exc_info=True,
+                extra={"email": mask_email(email), "ip": client_ip, "error": str(e)},
+            )
+            raise
 
         set_refresh_cookie(response, refresh_token_str, request)
         return response
@@ -123,27 +143,46 @@ class LoginView(TokenObtainPairView):
     throttle_classes = [SensitiveEndpointThrottle]
 
     def post(self, request, *args, **kwargs):
-        serializer = self.get_serializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
+        client_ip = get_client_ip(request)
+        email = request.data.get("email", "unknown")
 
-        user = serializer.user
+        try:
+            serializer = self.get_serializer(data=request.data)
+            serializer.is_valid(raise_exception=True)
 
-        mfa_payload = handle_mfa_flow(user)
-        if mfa_payload:
-            # MFA required - don't set cookies yet
-            return Response(mfa_payload, status=status.HTTP_200_OK)
+            user = serializer.user
 
-        # No MFA - create session and set refresh cookie
-        refresh_token_str = serializer.validated_data.get("refresh")
-        if refresh_token_str:
-            from rest_framework_simplejwt.tokens import RefreshToken
+            mfa_payload = handle_mfa_flow(user)
+            if mfa_payload:
+                # MFA required - don't set cookies yet
+                logger.info(
+                    f"Login requires MFA: {mask_email(user.email)}",
+                    extra={"user_id": user.id, "email": mask_email(user.email), "ip": client_ip, "mfa_required": True},
+                )
+                return Response(mfa_payload, status=status.HTTP_200_OK)
 
-            token = RefreshToken(refresh_token_str)
-            SessionService.create_session(user.id, token["jti"], request)
+            # No MFA - create session and set refresh cookie
+            refresh_token_str = serializer.validated_data.get("refresh")
+            if refresh_token_str:
+                from rest_framework_simplejwt.tokens import RefreshToken
 
-        response = Response(serializer.validated_data, status=status.HTTP_200_OK)
-        set_refresh_cookie(response, refresh_token_str, request)
-        return response
+                token = RefreshToken(refresh_token_str)
+                SessionService.create_session(user.id, token["jti"], request)
+
+            logger.info(
+                f"Login successful: {mask_email(user.email)}",
+                extra={"user_id": user.id, "email": mask_email(user.email), "ip": client_ip},
+            )
+
+            response = Response(serializer.validated_data, status=status.HTTP_200_OK)
+            set_refresh_cookie(response, refresh_token_str, request)
+            return response
+        except Exception as e:
+            logger.warning(
+                f"Login failed: {mask_email(email)}",
+                extra={"email": mask_email(email), "ip": client_ip, "error": str(e)},
+            )
+            raise
 
 
 class EmailVerifyView(APIView):
@@ -151,6 +190,7 @@ class EmailVerifyView(APIView):
     serializer_class = EmailVerifySerializer
 
     def post(self, request):
+        client_ip = get_client_ip(request)
         serializer = self.serializer_class(data=request.data)
         serializer.is_valid(raise_exception=True)
 
@@ -158,6 +198,7 @@ class EmailVerifyView(APIView):
         user_id = verify_email_token(token)
 
         if not user_id:
+            logger.warning("Email verification failed: invalid or expired token", extra={"ip": client_ip})
             return Response({"error": "Invalid or expired token"}, status=status.HTTP_400_BAD_REQUEST)
 
         try:
@@ -165,8 +206,16 @@ class EmailVerifyView(APIView):
             if not user.is_verified:
                 user.is_verified = True
                 user.save()
+                logger.info(
+                    f"Email verified successfully: {mask_email(user.email)}",
+                    extra={"user_id": user.id, "email": mask_email(user.email), "ip": client_ip},
+                )
             return Response({"message": "Email verified successfully"}, status=status.HTTP_200_OK)
         except User.DoesNotExist:
+            logger.error(
+                f"Email verification failed: user not found for ID {user_id}",
+                extra={"user_id": user_id, "ip": client_ip},
+            )
             return Response({"error": "User not found"}, status=status.HTTP_404_NOT_FOUND)
 
 
@@ -196,9 +245,14 @@ class MFASetupStartView(APIView):
     serializer_class = MFASetupStartSerializer
 
     def post(self, request):
+        client_ip = get_client_ip(request)
         serializer = self.serializer_class(data=request.data)
         serializer.is_valid(raise_exception=True)
         data = setup_mfa_start(request.user)
+        logger.info(
+            f"MFA setup started: {mask_email(request.user.email)}",
+            extra={"user_id": request.user.id, "email": mask_email(request.user.email), "ip": client_ip},
+        )
         return Response(data)
 
 
@@ -206,10 +260,27 @@ class MFASetupConfirmView(APIView):
     serializer_class = MFASetupConfirmSerializer
 
     def post(self, request):
+        client_ip = get_client_ip(request)
         serializer = self.serializer_class(data=request.data)
         serializer.is_valid(raise_exception=True)
-        data = setup_mfa_confirm(request.user, serializer.validated_data["code"])
-        return Response(data)
+        try:
+            data = setup_mfa_confirm(request.user, serializer.validated_data["code"])
+            logger.info(
+                f"MFA setup confirmed: {mask_email(request.user.email)}",
+                extra={"user_id": request.user.id, "email": mask_email(request.user.email), "ip": client_ip},
+            )
+            return Response(data)
+        except Exception as e:
+            logger.warning(
+                f"MFA setup confirmation failed: {mask_email(request.user.email)}",
+                extra={
+                    "user_id": request.user.id,
+                    "email": mask_email(request.user.email),
+                    "ip": client_ip,
+                    "error": str(e),
+                },
+            )
+            raise
 
 
 class MFABackupCodesRegenerateView(APIView):
@@ -227,33 +298,45 @@ class MFAVerifyView(APIView):
     serializer_class = MFAVerifySerializer
 
     def post(self, request):
+        client_ip = get_client_ip(request)
         serializer = self.serializer_class(data=request.data)
         serializer.is_valid(raise_exception=True)
-        data = verify_mfa(serializer.validated_data["ticket"], serializer.validated_data["code"])
+        try:
+            data = verify_mfa(serializer.validated_data["ticket"], serializer.validated_data["code"])
 
-        # Create session after successful MFA verification
-        refresh_token_str = data.get("refresh")
-        if refresh_token_str:
-            from rest_framework_simplejwt.tokens import RefreshToken
+            # Create session after successful MFA verification
+            refresh_token_str = data.get("refresh")
+            if refresh_token_str:
+                from rest_framework_simplejwt.tokens import RefreshToken
 
-            token = RefreshToken(refresh_token_str)
-            # Get user_id from the token payload
-            user_id = token.payload.get("user_id")
-            SessionService.create_session(user_id, token["jti"], request)
+                token = RefreshToken(refresh_token_str)
+                # Get user_id from the token payload
+                user_id = token.payload.get("user_id")
+                SessionService.create_session(user_id, token["jti"], request)
 
-        # Set refresh cookie
-        response = Response(data, status=status.HTTP_200_OK)
-        set_refresh_cookie(response, refresh_token_str, request)
-        return response
+                logger.info("MFA verification successful", extra={"user_id": user_id, "ip": client_ip})
+
+            # Set refresh cookie
+            response = Response(data, status=status.HTTP_200_OK)
+            set_refresh_cookie(response, refresh_token_str, request)
+            return response
+        except Exception as e:
+            logger.warning("MFA verification failed", extra={"ip": client_ip, "error": str(e)})
+            raise
 
 
 class MFADisableView(APIView):
     serializer_class = MFADisableSerializer
 
     def post(self, request):
+        client_ip = get_client_ip(request)
         serializer = self.serializer_class(data=request.data)
         serializer.is_valid(raise_exception=True)
         data = disable_mfa(request.user, serializer.validated_data["password"])
+        logger.warning(
+            f"MFA disabled: {mask_email(request.user.email)}",
+            extra={"user_id": request.user.id, "email": mask_email(request.user.email), "ip": client_ip},
+        )
         return Response(data)
 
 
@@ -261,9 +344,12 @@ class RefreshView(TokenRefreshView):
     serializer_class = RefreshSerializer
 
     def post(self, request, *args, **kwargs):
+        client_ip = get_client_ip(request)
+
         # Get the old refresh token from cookie to extract JTI
         old_refresh_str = request.COOKIES.get(COOKIE_NAME)
         if not old_refresh_str:
+            logger.warning("Token refresh failed: no token in cookie", extra={"ip": client_ip})
             raise InvalidToken("No valid token found in cookie")
 
         from rest_framework_simplejwt.tokens import RefreshToken
@@ -271,11 +357,14 @@ class RefreshView(TokenRefreshView):
         try:
             old_token = RefreshToken(old_refresh_str)
             old_jti = old_token["jti"]
+            user_id = old_token.get("user_id")
         except (InvalidToken, TokenError) as e:
+            logger.warning("Token refresh failed: invalid token", extra={"ip": client_ip, "error": str(e)})
             raise InvalidToken("Invalid refresh token") from e
 
         # Validate session exists in whitelist
         if not SessionService.validate_session(old_jti):
+            logger.warning("Token refresh failed: revoked session", extra={"user_id": user_id, "ip": client_ip})
             raise InvalidToken("Session has been revoked")
 
         # Proceed with token refresh
@@ -288,6 +377,7 @@ class RefreshView(TokenRefreshView):
                 new_token = RefreshToken(new_refresh_str)
                 new_jti = new_token["jti"]
                 SessionService.rotate_session(old_jti, new_jti)
+                logger.debug("Token refreshed successfully", extra={"user_id": user_id, "ip": client_ip})
 
         return response
 
@@ -300,6 +390,9 @@ class LogoutView(APIView):
     permission_classes = [AllowAny]
 
     def post(self, request):
+        client_ip = get_client_ip(request)
+        user_id = getattr(request.user, "id", None) if request.user.is_authenticated else None
+
         refresh = request.COOKIES.get(COOKIE_NAME)
 
         if refresh:
@@ -311,8 +404,12 @@ class LogoutView(APIView):
                 SessionService.revoke_session(token["jti"])
                 # Also blacklist the token (defense in depth)
                 token.blacklist()
-            except (InvalidToken, TokenError):
-                pass  # logout as idempotent
+                logger.info("Logout successful", extra={"user_id": user_id, "ip": client_ip})
+            except (InvalidToken, TokenError) as e:
+                logger.debug(
+                    "Logout with invalid token (idempotent)",
+                    extra={"user_id": user_id, "ip": client_ip, "error": str(e)},
+                )
 
         resp = Response(status=status.HTTP_204_NO_CONTENT)
         resp.delete_cookie(COOKIE_NAME, **delete_cookie_opts())
@@ -324,12 +421,18 @@ class PasswordChangeView(GenericAPIView):
     serializer_class = PasswordChangeSerializer
 
     def post(self, request):
+        client_ip = get_client_ip(request)
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
 
         user = request.user
         user.set_password(serializer.validated_data["new_password"])
         user.save()
+
+        logger.info(
+            f"Password changed successfully: {mask_email(user.email)}",
+            extra={"user_id": user.id, "email": mask_email(user.email), "ip": client_ip},
+        )
 
         return Response({"message": "Password changed successfully."}, status=status.HTTP_200_OK)
 
@@ -383,6 +486,7 @@ class SessionRevokeAllView(APIView):
     permission_classes = [IsAuthenticated]
 
     def post(self, request):
+        client_ip = get_client_ip(request)
         current_jti = None
         refresh = request.COOKIES.get(COOKIE_NAME)
         if refresh:
@@ -396,6 +500,14 @@ class SessionRevokeAllView(APIView):
 
         if current_jti:
             SessionService.revoke_all_other_sessions(request.user.id, current_jti)
+            logger.info(
+                f"All other sessions revoked: {mask_email(request.user.email)}",
+                extra={
+                    "user_id": request.user.id,
+                    "email": mask_email(request.user.email),
+                    "ip": client_ip,
+                },
+            )
 
         return Response({"message": "All other sessions revoked"}, status=status.HTTP_200_OK)
 
@@ -406,6 +518,7 @@ class PasswordResetRequestView(APIView):
     throttle_classes = [SensitiveEndpointThrottle]
 
     def post(self, request):
+        client_ip = get_client_ip(request)
         serializer = self.serializer_class(data=request.data)
         serializer.is_valid(raise_exception=True)
 
@@ -413,8 +526,15 @@ class PasswordResetRequestView(APIView):
         try:
             user = User.objects.get(email=email)
             send_password_reset_email(user)
+            logger.info(
+                f"Password reset requested: {mask_email(email)}",
+                extra={"user_id": user.id, "email": mask_email(email), "ip": client_ip},
+            )
         except User.DoesNotExist:
-            pass  # Don't reveal user existence
+            logger.debug(
+                f"Password reset requested for non-existent email: {mask_email(email)}",
+                extra={"email": mask_email(email), "ip": client_ip},
+            )
 
         return Response({"message": "Password reset email sent if account exists."}, status=status.HTTP_200_OK)
 
@@ -424,6 +544,7 @@ class PasswordResetConfirmView(APIView):
     serializer_class = PasswordResetConfirmSerializer
 
     def post(self, request):
+        client_ip = get_client_ip(request)
         serializer = self.serializer_class(data=request.data)
         serializer.is_valid(raise_exception=True)
 
@@ -431,14 +552,22 @@ class PasswordResetConfirmView(APIView):
         user_id = verify_password_reset_token(token)
 
         if not user_id:
+            logger.warning("Password reset failed: invalid or expired token", extra={"ip": client_ip})
             return Response({"error": "Invalid or expired token"}, status=status.HTTP_400_BAD_REQUEST)
 
         try:
             user = User.objects.get(id=user_id)
             user.set_password(serializer.validated_data["new_password"])
             user.save()
+            logger.info(
+                f"Password reset successfully: {mask_email(user.email)}",
+                extra={"user_id": user.id, "email": mask_email(user.email), "ip": client_ip},
+            )
             return Response({"message": "Password reset successfully"}, status=status.HTTP_200_OK)
         except User.DoesNotExist:
+            logger.error(
+                f"Password reset failed: user not found for ID {user_id}", extra={"user_id": user_id, "ip": client_ip}
+            )
             return Response({"error": "User not found"}, status=status.HTTP_404_NOT_FOUND)
 
 
@@ -462,34 +591,43 @@ class MicrosoftAuthCallbackView(APIView):
 
     def post(self, request):
         """Handle callback via POST (recommended for SPA flow)."""
+        client_ip = get_client_ip(request)
         serializer = self.serializer_class(data=request.data)
         serializer.is_valid(raise_exception=True)
 
         code = serializer.validated_data["code"]
         state = serializer.validated_data.get("state")
 
-        data = handle_microsoft_callback(code, state)
+        try:
+            data = handle_microsoft_callback(code, state)
 
-        # Check if MFA is required
-        if data.get("mfa_required"):
-            return Response(data, status=status.HTTP_200_OK)
+            # Check if MFA is required
+            if data.get("mfa_required"):
+                logger.info("Microsoft OAuth login requires MFA", extra={"ip": client_ip})
+                return Response(data, status=status.HTTP_200_OK)
 
-        # Create session in whitelist
-        refresh_token_str = data.get("refresh")
-        if refresh_token_str:
-            from rest_framework_simplejwt.tokens import RefreshToken
+            # Create session in whitelist
+            refresh_token_str = data.get("refresh")
+            if refresh_token_str:
+                from rest_framework_simplejwt.tokens import RefreshToken
 
-            token = RefreshToken(refresh_token_str)
-            user_id = token.payload.get("user_id")
-            SessionService.create_session(user_id, token["jti"], request)
+                token = RefreshToken(refresh_token_str)
+                user_id = token.payload.get("user_id")
+                SessionService.create_session(user_id, token["jti"], request)
 
-        # Set refresh token as httpOnly cookie
-        response = Response(data, status=status.HTTP_200_OK)
-        set_refresh_cookie(response, refresh_token_str, request)
-        return response
+                logger.info("Microsoft OAuth login successful", extra={"user_id": user_id, "ip": client_ip})
+
+            # Set refresh token as httpOnly cookie
+            response = Response(data, status=status.HTTP_200_OK)
+            set_refresh_cookie(response, refresh_token_str, request)
+            return response
+        except Exception as e:
+            logger.error("Microsoft OAuth callback failed", exc_info=True, extra={"ip": client_ip, "error": str(e)})
+            raise
 
     def get(self, request):
         """Handle callback via GET (Microsoft redirect)."""
+        client_ip = get_client_ip(request)
         code = request.query_params.get("code")
         state = request.query_params.get("state")
         error = request.query_params.get("error")
@@ -497,6 +635,10 @@ class MicrosoftAuthCallbackView(APIView):
 
         # Handle error from Microsoft
         if error:
+            logger.warning(
+                f"Microsoft OAuth error: {error}",
+                extra={"ip": client_ip, "error": error, "error_description": error_description},
+            )
             frontend_url = settings.FRONTEND_URL
             error_params = f"?error={error}&error_description={error_description or 'Authentication failed'}"
             from django.shortcuts import redirect
