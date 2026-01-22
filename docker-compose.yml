@@ -25,6 +25,8 @@ services:
     depends_on:
       db:
         condition: service_started
+      redis:
+        condition: service_started
     develop:
       watch:
         - action: sync
