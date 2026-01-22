@@ -29,8 +29,29 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "coverage>=7.13.1",
     "pre-commit~=4.3.0",
 ]
+
+[tool.coverage.run]
+source = ["apps"]
+omit = [
+    "*/migrations/*",
+    "*/tests.py",
+    "*/__init__.py",
+    "*/admin.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "def __str__",
+    "raise NotImplementedError",
+    "if TYPE_CHECKING:",
+]
+show_missing = true
+skip_covered = false
 
 [tool.ruff]
 line-length = 120

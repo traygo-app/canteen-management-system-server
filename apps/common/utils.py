@@ -3,8 +3,11 @@ def is_authenticated(user) -> bool:
 
 
 def get_user_groups_set(user) -> set:
-    if hasattr(user, "_group_names_cache"):
+    if hasattr(user, "_group_names_cache") and user._group_names_cache is not None:
         return user._group_names_cache
+
+    if not hasattr(user, "groups"):
+        return set()
 
     names = set(user.groups.values_list("name", flat=True))
     user._group_names_cache = names
