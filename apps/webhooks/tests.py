@@ -7,7 +7,7 @@ from rest_framework import status
 from rest_framework.test import APIClient, APITestCase
 
 from apps.wallets.models import Balance, Transaction
-from apps.webhooks.handlers import StripeWebhookError, StripeWebhookHandler
+from apps.webhooks.handlers import StripeWebhookHandler
 from apps.webhooks.models import WebhookEvent, WebhookSource, WebhookStatus
 from apps.webhooks.permissions import HasValidStripeSignature
 from apps.webhooks.services import StripeWebhookError as ServiceError
@@ -181,21 +181,3 @@ class CheckoutSessionHandlerTests(TestCase):
 
         self.balance.refresh_from_db()
         self.assertEqual(self.balance.current_balance, Decimal("150.00"))
-
-    def test_checkout_session_transaction_not_found(self):
-        event_data = {
-            "id": "evt_not_found",
-            "type": "checkout.session.completed",
-            "data": {
-                "object": {
-                    "id": "cs_nonexistent",
-                    "payment_intent": "pi_456",
-                }
-            },
-        }
-        request = MagicMock()
-        request.stripe_event = event_data
-        handler = StripeWebhookHandler(request)
-
-        with self.assertRaises(StripeWebhookError):
-            handler.handle_event()

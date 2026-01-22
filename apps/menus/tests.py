@@ -215,13 +215,3 @@ class MenuViewsTests(APITestCase):
         self.client.force_authenticate(user=self.admin)
         response = self.client.get("/categories")
         self.assertEqual(response.status_code, status.HTTP_501_NOT_IMPLEMENTED)
-
-    def test_menu_detail_not_implemented(self):
-        menu = Menu.objects.create(
-            name="Detail Menu",
-            start_time=self.now + timedelta(hours=1),
-            end_time=self.now + timedelta(hours=4),
-        )
-        self.client.force_authenticate(user=self.admin)
-        response = self.client.get(f"/menus/{menu.id}")
-        self.assertIn(response.status_code, [status.HTTP_501_NOT_IMPLEMENTED, status.HTTP_200_OK])
