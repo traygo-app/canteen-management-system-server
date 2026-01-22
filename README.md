@@ -1,7 +1,6 @@
 <div align="center">
 
-<!-- Replace with your logo -->
-<!-- <img src="docs/assets/logo.png" alt="Logo" width="120" height="120"> -->
+<img src="docs/assets/logo.png" alt="Logo" width="181" height="85">
 
 # Canteen Management System
 
