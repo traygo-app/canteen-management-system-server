@@ -145,3 +145,5 @@ dmypy.json
 cython_debug/
 ignore/
 .ruff_cache/
+.idea/
+.vscode/
