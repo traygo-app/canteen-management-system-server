@@ -4,6 +4,8 @@ from rest_framework.generics import RetrieveAPIView
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
+from apps.common.drf_permissions import IsOwnerOrAdmin
+
 from .serializers import UserSerializer
 
 User = get_user_model()
@@ -20,6 +22,7 @@ class UserDetailView(RetrieveAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
     lookup_field = "id"
+    permission_classes = [IsOwnerOrAdmin]
 
     # def patch(self, request, *args, **kwargs):
     #     return Response(status=status.HTTP_501_NOT_IMPLEMENTED)
