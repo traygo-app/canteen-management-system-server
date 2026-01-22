@@ -29,6 +29,16 @@ jobs:
           --health-timeout 5s
           --health-retries 5
 
+      redis:
+        image: redis:7
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -44,7 +54,7 @@ jobs:
       - name: Install dependencies
         run: uv sync --locked
 
-      - name: Run tests
+      - name: Run tests with coverage
         env:
           SECRET_KEY: "test-secret-key-for-ci"
           DEBUG: "True"
@@ -55,6 +65,14 @@ jobs:
           SQL_PASSWORD: testpassword
           SQL_HOST: localhost
           SQL_PORT: 5432
+          REDIS_HOST: localhost
+          REDIS_PORT: 6379
+          REDIS_PASSWORD: ""
+          MFA_FERNET_KEY: "ZmQ3NzI5YzBiMzA3NGM2ZGFiNjY4MGM4YjY0MWE2YjI="
+          STRIPE_SECRET_KEY: "sk_test_fake"
+          STRIPE_WEBHOOK_SECRET: "whsec_fake"
+          DEFAULT_FROM_EMAIL: "test@example.com"
         run: |
           uv run python manage.py migrate --noinput
-          uv run python manage.py test
+          uv run coverage run manage.py test apps --verbosity=2
+          uv run coverage report --fail-under=60
