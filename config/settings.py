@@ -1,3 +1,4 @@
+import os
 from datetime import timedelta
 from decimal import Decimal
 from pathlib import Path
@@ -18,6 +19,7 @@ env = Env(
     SQL_PASSWORD=(str, "password"),
     SQL_HOST=(str, "localhost"),
     SQL_PORT=(str, "5432"),
+    LOG_DIR=(str, "logs"),
 )
 env.read_env()  # for docker env
 env.read_env(f"{BASE_DIR}/.env")  # for local runserver
@@ -393,4 +395,117 @@ STRIPE_RETURN_URL = env("STRIPE_RETURN_URL", default=f"{FRONTEND_URL}/wallet/top
 
 # Stripe Top-up Limits
 STRIPE_MIN_TOP_UP = Decimal(env("STRIPE_MIN_TOP_UP", default="5.00"))
+
+# Logging Configuration
+LOG_DIR = BASE_DIR / env("LOG_DIR")
+
+# Auto-create logs directory if it doesn't exist
+os.makedirs(LOG_DIR, exist_ok=True)  # noqa: PTH103
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "verbose": {
+            "format": "{levelname} {asctime} {name} {module} {message}",
+            "style": "{",
+        },
+        "simple": {
+            "format": "{levelname} {message}",
+            "style": "{",
+        },
+    },
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+            "formatter": "verbose",
+            "level": "DEBUG" if DEBUG else "INFO",
+        },
+        "debug_file": {
+            "class": "logging.handlers.RotatingFileHandler",
+            "filename": LOG_DIR / "debug.log",
+            "maxBytes": 10 * 1024 * 1024,  # 10MB
+            "backupCount": 10,
+            "formatter": "verbose",
+            "level": "DEBUG",
+        },
+        "info_file": {
+            "class": "logging.handlers.RotatingFileHandler",
+            "filename": LOG_DIR / "info.log",
+            "maxBytes": 10 * 1024 * 1024,  # 10MB
+            "backupCount": 10,
+            "formatter": "verbose",
+            "level": "INFO",
+        },
+        "warning_file": {
+            "class": "logging.handlers.RotatingFileHandler",
+            "filename": LOG_DIR / "warning.log",
+            "maxBytes": 10 * 1024 * 1024,  # 10MB
+            "backupCount": 10,
+            "formatter": "verbose",
+            "level": "WARNING",
+        },
+        "error_file": {
+            "class": "logging.handlers.RotatingFileHandler",
+            "filename": LOG_DIR / "error.log",
+            "maxBytes": 10 * 1024 * 1024,  # 10MB
+            "backupCount": 10,
+            "formatter": "verbose",
+            "level": "ERROR",
+        },
+    },
+    "loggers": {
+        # Django loggers
+        "django": {
+            "handlers": ["console", "info_file", "warning_file", "error_file"],
+            "level": "INFO",
+            "propagate": False,
+        },
+        "django.request": {
+            "handlers": ["console", "error_file"],
+            "level": "ERROR",
+            "propagate": False,
+        },
+        "django.db.backends": {
+            "handlers": ["debug_file"] if DEBUG else [],
+            "level": "DEBUG" if DEBUG else "INFO",
+            "propagate": False,
+        },
+        # Application loggers
+        "apps.authentication": {
+            "handlers": ["console", "debug_file", "info_file", "warning_file", "error_file"],
+            "level": "DEBUG" if DEBUG else "INFO",
+            "propagate": False,
+        },
+        "apps.wallets": {
+            "handlers": ["console", "debug_file", "info_file", "warning_file", "error_file"],
+            "level": "DEBUG" if DEBUG else "INFO",
+            "propagate": False,
+        },
+        "apps.orders": {
+            "handlers": ["console", "debug_file", "info_file", "warning_file", "error_file"],
+            "level": "DEBUG" if DEBUG else "INFO",
+            "propagate": False,
+        },
+        "apps.users": {
+            "handlers": ["console", "debug_file", "info_file", "warning_file", "error_file"],
+            "level": "DEBUG" if DEBUG else "INFO",
+            "propagate": False,
+        },
+        "apps.webhooks": {
+            "handlers": ["console", "debug_file", "info_file", "warning_file", "error_file"],
+            "level": "DEBUG" if DEBUG else "INFO",
+            "propagate": False,
+        },
+        "apps.common": {
+            "handlers": ["console", "debug_file", "info_file", "warning_file", "error_file"],
+            "level": "DEBUG" if DEBUG else "INFO",
+            "propagate": False,
+        },
+    },
+    "root": {
+        "handlers": ["console", "debug_file", "info_file", "warning_file", "error_file"],
+        "level": "DEBUG" if DEBUG else "INFO",
+    },
+}
 STRIPE_MAX_TOP_UP = Decimal(env("STRIPE_MAX_TOP_UP", default="500.00"))

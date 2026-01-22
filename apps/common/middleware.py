@@ -1,10 +1,11 @@
-import traceback
-from datetime import UTC, datetime
+import logging
 
 import redis
 from django.conf import settings
 from django.db import OperationalError
 from django.http import JsonResponse
+
+logger = logging.getLogger(__name__)
 
 
 class MaintenanceModeMiddleware:
@@ -29,7 +30,10 @@ class MaintenanceModeMiddleware:
 
         # Check manual maintenance mode
         if getattr(settings, "MAINTENANCE_MODE", False):
-            print(f"[MAINTENANCE MODE] Request to {request.path} blocked - manual maintenance mode enabled")
+            logger.warning(
+                f"Maintenance mode: Request to {request.path} blocked - manual maintenance mode enabled",
+                extra={"path": request.path, "method": request.method},
+            )
             return self._maintenance_response()
 
         response = self.get_response(request)
@@ -46,18 +50,16 @@ class MaintenanceModeMiddleware:
 
         # Check if it's a database or Redis connection error
         if isinstance(exception, OperationalError | redis.ConnectionError | redis.exceptions.ConnectionError):
-            # Log full exception details
-            timestamp = datetime.now(UTC).isoformat()
-            print(f"\n{'=' * 80}")
-            print(f"[SERVICE FAILURE] {timestamp}")
-            print(f"Path: {request.path}")
-            print(f"Method: {request.method}")
-            print(f"Exception Type: {type(exception).__name__}")
-            print(f"Exception Message: {str(exception)}")
-            print("\nFull Traceback:")
-            print(traceback.format_exc())
-            print(f"{'=' * 80}\n")
-
+            logger.error(
+                f"Service failure: {type(exception).__name__} on {request.method} {request.path}",
+                exc_info=True,
+                extra={
+                    "path": request.path,
+                    "method": request.method,
+                    "exception_type": type(exception).__name__,
+                    "exception_message": str(exception),
+                },
+            )
             return self._maintenance_response()
 
         # Return None to let Django handle other exceptions normally
