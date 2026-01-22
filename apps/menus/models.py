@@ -7,17 +7,32 @@ from apps.common.constants import MenuType
 from apps.common.models import BaseModel
 
 
+class CategoryManager(models.Manager):
+    def get_by_natural_key(self, name):
+        return self.get(name=name)
+
+
 class Category(BaseModel):
     name = models.CharField(max_length=120, unique=True)
     display_order = models.IntegerField(default=0)
+
+    objects = CategoryManager()
 
     class Meta:
         db_table = "category"
         ordering = ("display_order", "name")
         verbose_name_plural = "Categories"
 
+    def natural_key(self):
+        return (self.name,)
+
     def __str__(self):
         return self.name
+
+
+class ItemManager(models.Manager):
+    def get_by_natural_key(self, name):
+        return self.get(name=name)
 
 
 class Item(BaseModel):
@@ -35,6 +50,8 @@ class Item(BaseModel):
         validators=[MinValueValidator(Decimal("0.00"))],
     )
 
+    objects = ItemManager()
+
     class Meta:
         db_table = "item"
         indexes = [
@@ -43,8 +60,18 @@ class Item(BaseModel):
         ]
         unique_together = [("category", "name")]
 
+    def natural_key(self):
+        return (self.name,)
+
+    natural_key.dependencies = ["menus.category"]
+
     def __str__(self):
         return self.name
+
+
+class MenuManager(models.Manager):
+    def get_by_natural_key(self, name):
+        return self.get(name=name)
 
 
 class Menu(BaseModel):
@@ -61,12 +88,17 @@ class Menu(BaseModel):
         related_query_name="menu",
     )
 
+    objects = MenuManager()
+
     class Meta:
         db_table = "menu"
         indexes = [
             models.Index(fields=["start_time"]),
             models.Index(fields=["end_time"]),
         ]
+
+    def natural_key(self):
+        return (self.name,)
 
     def __str__(self):
         return f"{self.name} ({self.start_time} - {self.end_time})"

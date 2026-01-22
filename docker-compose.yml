@@ -21,7 +21,7 @@ services:
     ports:
       - "8000:8000"
     command:
-      - /deployment/scripts/start-django-dev.sh
+      - /scripts/start-django-dev.sh
     depends_on:
       db:
         condition: service_started

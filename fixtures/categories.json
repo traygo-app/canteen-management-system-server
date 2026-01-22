@@ -1,0 +1,86 @@
+[
+  {
+    "model": "menus.category",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "name": "Appetizers",
+      "display_order": 0
+    }
+  },
+  {
+    "model": "menus.category",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "name": "Salads",
+      "display_order": 1
+    }
+  },
+  {
+    "model": "menus.category",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "name": "Soups",
+      "display_order": 2
+    }
+  },
+  {
+    "model": "menus.category",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "name": "Main Course",
+      "display_order": 3
+    }
+  },
+  {
+    "model": "menus.category",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "name": "Sides",
+      "display_order": 4
+    }
+  },
+  {
+    "model": "menus.category",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "name": "Desserts",
+      "display_order": 5
+    }
+  },
+  {
+    "model": "menus.category",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "name": "Beverages",
+      "display_order": 6
+    }
+  }
+]
