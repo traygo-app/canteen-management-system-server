@@ -74,5 +74,5 @@ jobs:
           DEFAULT_FROM_EMAIL: "test@example.com"
         run: |
           uv run python manage.py migrate --noinput
-          uv run coverage run manage.py test apps --verbosity=2
+          uv run coverage run manage.py test apps --verbosity=1
           uv run coverage report --fail-under=60
