@@ -57,7 +57,7 @@ jobs:
       - name: Run tests with coverage
         env:
           SECRET_KEY: "test-secret-key-for-ci"
-          DEBUG: "True"
+          DEBUG: "False"
           ALLOWED_HOSTS: "localhost,127.0.0.1"
           SQL_ENGINE: django.db.backends.postgresql
           SQL_DATABASE: testdb
