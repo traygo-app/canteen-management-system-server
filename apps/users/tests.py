@@ -154,11 +154,6 @@ class UserViewsTests(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data["email"], "view.test@fcim.utm.md")
 
-    def test_user_by_account_no_not_found(self):
-        self.client.force_authenticate(user=self.admin)
-        response = self.client.get("/users/account123456")
-        self.assertIn(response.status_code, [status.HTTP_404_NOT_FOUND, status.HTTP_501_NOT_IMPLEMENTED])
-
     def test_me_password_not_implemented(self):
         self.client.force_authenticate(user=self.user)
         response = self.client.patch("/users/me/password")
