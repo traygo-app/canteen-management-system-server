@@ -21,9 +21,11 @@ services:
     ports:
       - "8000:8000"
     command:
-      - /deployment/scripts/start-django-dev.sh
+      - /scripts/start-django-dev.sh
     depends_on:
       db:
+        condition: service_started
+      redis:
         condition: service_started
     develop:
       watch:
@@ -43,12 +45,6 @@ services:
 
         - action: rebuild
           path: ./deployment/Dockerfile
-  mailhog:
-    image: mailhog/mailhog
-    container_name: mailhog
-    ports:
-      - "1025:1025"  # SMTP
-      - "8025:8025"  # Web UI
 
   redis:
     image: redis:7-alpine

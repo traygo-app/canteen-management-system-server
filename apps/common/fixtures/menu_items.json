@@ -1,0 +1,6122 @@
+[
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Friday Jan 23"
+      ],
+      "item": [
+        "Fresh Orange Juice"
+      ],
+      "display_order": 1,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Friday Jan 23"
+      ],
+      "item": [
+        "Coffee"
+      ],
+      "display_order": 2,
+      "quantity": 150,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Friday Jan 23"
+      ],
+      "item": [
+        "Iced Tea"
+      ],
+      "display_order": 3,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Friday Jan 23"
+      ],
+      "item": [
+        "Spring Rolls"
+      ],
+      "display_order": 4,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Friday Jan 23"
+      ],
+      "item": [
+        "Bruschetta"
+      ],
+      "display_order": 5,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Friday Jan 23"
+      ],
+      "item": [
+        "Chocolate Cake"
+      ],
+      "display_order": 6,
+      "quantity": 30,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Friday Jan 23"
+      ],
+      "item": [
+        "Apple Pie"
+      ],
+      "display_order": 7,
+      "quantity": 30,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 23"
+      ],
+      "item": [
+        "Spring Rolls"
+      ],
+      "display_order": 1,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 23"
+      ],
+      "item": [
+        "Bruschetta"
+      ],
+      "display_order": 2,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 23"
+      ],
+      "item": [
+        "Mozzarella Sticks"
+      ],
+      "display_order": 3,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 23"
+      ],
+      "item": [
+        "Caesar Salad"
+      ],
+      "display_order": 4,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 23"
+      ],
+      "item": [
+        "Greek Salad"
+      ],
+      "display_order": 5,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 23"
+      ],
+      "item": [
+        "Caprese Salad"
+      ],
+      "display_order": 6,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 23"
+      ],
+      "item": [
+        "Chicken Noodle Soup"
+      ],
+      "display_order": 7,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 23"
+      ],
+      "item": [
+        "Tomato Basil Soup"
+      ],
+      "display_order": 8,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 23"
+      ],
+      "item": [
+        "Minestrone Soup"
+      ],
+      "display_order": 9,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 23"
+      ],
+      "item": [
+        "Grilled Chicken Breast"
+      ],
+      "display_order": 10,
+      "quantity": 70,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 23"
+      ],
+      "item": [
+        "Pasta Carbonara"
+      ],
+      "display_order": 11,
+      "quantity": 70,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 23"
+      ],
+      "item": [
+        "Baked Salmon"
+      ],
+      "display_order": 12,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 23"
+      ],
+      "item": [
+        "Beef Stew"
+      ],
+      "display_order": 13,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 23"
+      ],
+      "item": [
+        "Vegetarian Lasagna"
+      ],
+      "display_order": 14,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 23"
+      ],
+      "item": [
+        "Pork Chops"
+      ],
+      "display_order": 15,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 23"
+      ],
+      "item": [
+        "French Fries"
+      ],
+      "display_order": 16,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 23"
+      ],
+      "item": [
+        "Steamed Vegetables"
+      ],
+      "display_order": 17,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 23"
+      ],
+      "item": [
+        "Mashed Potatoes"
+      ],
+      "display_order": 18,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 23"
+      ],
+      "item": [
+        "Fresh Orange Juice"
+      ],
+      "display_order": 19,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 23"
+      ],
+      "item": [
+        "Coffee"
+      ],
+      "display_order": 20,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 23"
+      ],
+      "item": [
+        "Mineral Water"
+      ],
+      "display_order": 21,
+      "quantity": 150,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 23"
+      ],
+      "item": [
+        "Iced Tea"
+      ],
+      "display_order": 22,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 23"
+      ],
+      "item": [
+        "Mozzarella Sticks"
+      ],
+      "display_order": 1,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 23"
+      ],
+      "item": [
+        "Caesar Salad"
+      ],
+      "display_order": 2,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 23"
+      ],
+      "item": [
+        "Greek Salad"
+      ],
+      "display_order": 3,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 23"
+      ],
+      "item": [
+        "Caprese Salad"
+      ],
+      "display_order": 4,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 23"
+      ],
+      "item": [
+        "Chicken Noodle Soup"
+      ],
+      "display_order": 5,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 23"
+      ],
+      "item": [
+        "Tomato Basil Soup"
+      ],
+      "display_order": 6,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 23"
+      ],
+      "item": [
+        "Grilled Chicken Breast"
+      ],
+      "display_order": 7,
+      "quantity": 70,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 23"
+      ],
+      "item": [
+        "Pasta Carbonara"
+      ],
+      "display_order": 8,
+      "quantity": 70,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 23"
+      ],
+      "item": [
+        "Baked Salmon"
+      ],
+      "display_order": 9,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 23"
+      ],
+      "item": [
+        "Beef Stew"
+      ],
+      "display_order": 10,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 23"
+      ],
+      "item": [
+        "Vegetarian Lasagna"
+      ],
+      "display_order": 11,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 23"
+      ],
+      "item": [
+        "Pork Chops"
+      ],
+      "display_order": 12,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 23"
+      ],
+      "item": [
+        "French Fries"
+      ],
+      "display_order": 13,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 23"
+      ],
+      "item": [
+        "Steamed Vegetables"
+      ],
+      "display_order": 14,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 23"
+      ],
+      "item": [
+        "Mashed Potatoes"
+      ],
+      "display_order": 15,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 23"
+      ],
+      "item": [
+        "Chocolate Cake"
+      ],
+      "display_order": 16,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 23"
+      ],
+      "item": [
+        "Apple Pie"
+      ],
+      "display_order": 17,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 23"
+      ],
+      "item": [
+        "Tiramisu"
+      ],
+      "display_order": 18,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 23"
+      ],
+      "item": [
+        "Fresh Orange Juice"
+      ],
+      "display_order": 19,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 23"
+      ],
+      "item": [
+        "Coffee"
+      ],
+      "display_order": 20,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 23"
+      ],
+      "item": [
+        "Mineral Water"
+      ],
+      "display_order": 21,
+      "quantity": 150,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 23"
+      ],
+      "item": [
+        "Iced Tea"
+      ],
+      "display_order": 22,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Monday Jan 27"
+      ],
+      "item": [
+        "Fresh Orange Juice"
+      ],
+      "display_order": 1,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Monday Jan 27"
+      ],
+      "item": [
+        "Coffee"
+      ],
+      "display_order": 2,
+      "quantity": 150,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Monday Jan 27"
+      ],
+      "item": [
+        "Iced Tea"
+      ],
+      "display_order": 3,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Monday Jan 27"
+      ],
+      "item": [
+        "Spring Rolls"
+      ],
+      "display_order": 4,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Monday Jan 27"
+      ],
+      "item": [
+        "Bruschetta"
+      ],
+      "display_order": 5,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Monday Jan 27"
+      ],
+      "item": [
+        "Chocolate Cake"
+      ],
+      "display_order": 6,
+      "quantity": 30,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Monday Jan 27"
+      ],
+      "item": [
+        "Apple Pie"
+      ],
+      "display_order": 7,
+      "quantity": 30,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Monday Jan 27"
+      ],
+      "item": [
+        "Spring Rolls"
+      ],
+      "display_order": 1,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Monday Jan 27"
+      ],
+      "item": [
+        "Bruschetta"
+      ],
+      "display_order": 2,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Monday Jan 27"
+      ],
+      "item": [
+        "Mozzarella Sticks"
+      ],
+      "display_order": 3,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Monday Jan 27"
+      ],
+      "item": [
+        "Caesar Salad"
+      ],
+      "display_order": 4,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Monday Jan 27"
+      ],
+      "item": [
+        "Greek Salad"
+      ],
+      "display_order": 5,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Monday Jan 27"
+      ],
+      "item": [
+        "Caprese Salad"
+      ],
+      "display_order": 6,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Monday Jan 27"
+      ],
+      "item": [
+        "Chicken Noodle Soup"
+      ],
+      "display_order": 7,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Monday Jan 27"
+      ],
+      "item": [
+        "Tomato Basil Soup"
+      ],
+      "display_order": 8,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Monday Jan 27"
+      ],
+      "item": [
+        "Minestrone Soup"
+      ],
+      "display_order": 9,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Monday Jan 27"
+      ],
+      "item": [
+        "Grilled Chicken Breast"
+      ],
+      "display_order": 10,
+      "quantity": 70,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Monday Jan 27"
+      ],
+      "item": [
+        "Pasta Carbonara"
+      ],
+      "display_order": 11,
+      "quantity": 70,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Monday Jan 27"
+      ],
+      "item": [
+        "Baked Salmon"
+      ],
+      "display_order": 12,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Monday Jan 27"
+      ],
+      "item": [
+        "Beef Stew"
+      ],
+      "display_order": 13,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Monday Jan 27"
+      ],
+      "item": [
+        "Vegetarian Lasagna"
+      ],
+      "display_order": 14,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Monday Jan 27"
+      ],
+      "item": [
+        "Pork Chops"
+      ],
+      "display_order": 15,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Monday Jan 27"
+      ],
+      "item": [
+        "French Fries"
+      ],
+      "display_order": 16,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Monday Jan 27"
+      ],
+      "item": [
+        "Steamed Vegetables"
+      ],
+      "display_order": 17,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Monday Jan 27"
+      ],
+      "item": [
+        "Mashed Potatoes"
+      ],
+      "display_order": 18,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Monday Jan 27"
+      ],
+      "item": [
+        "Fresh Orange Juice"
+      ],
+      "display_order": 19,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Monday Jan 27"
+      ],
+      "item": [
+        "Coffee"
+      ],
+      "display_order": 20,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Monday Jan 27"
+      ],
+      "item": [
+        "Mineral Water"
+      ],
+      "display_order": 21,
+      "quantity": 150,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Monday Jan 27"
+      ],
+      "item": [
+        "Iced Tea"
+      ],
+      "display_order": 22,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Monday Jan 27"
+      ],
+      "item": [
+        "Mozzarella Sticks"
+      ],
+      "display_order": 1,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Monday Jan 27"
+      ],
+      "item": [
+        "Caesar Salad"
+      ],
+      "display_order": 2,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Monday Jan 27"
+      ],
+      "item": [
+        "Greek Salad"
+      ],
+      "display_order": 3,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Monday Jan 27"
+      ],
+      "item": [
+        "Caprese Salad"
+      ],
+      "display_order": 4,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Monday Jan 27"
+      ],
+      "item": [
+        "Chicken Noodle Soup"
+      ],
+      "display_order": 5,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Monday Jan 27"
+      ],
+      "item": [
+        "Tomato Basil Soup"
+      ],
+      "display_order": 6,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Monday Jan 27"
+      ],
+      "item": [
+        "Grilled Chicken Breast"
+      ],
+      "display_order": 7,
+      "quantity": 70,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Monday Jan 27"
+      ],
+      "item": [
+        "Pasta Carbonara"
+      ],
+      "display_order": 8,
+      "quantity": 70,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Monday Jan 27"
+      ],
+      "item": [
+        "Baked Salmon"
+      ],
+      "display_order": 9,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Monday Jan 27"
+      ],
+      "item": [
+        "Beef Stew"
+      ],
+      "display_order": 10,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Monday Jan 27"
+      ],
+      "item": [
+        "Vegetarian Lasagna"
+      ],
+      "display_order": 11,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Monday Jan 27"
+      ],
+      "item": [
+        "Pork Chops"
+      ],
+      "display_order": 12,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Monday Jan 27"
+      ],
+      "item": [
+        "French Fries"
+      ],
+      "display_order": 13,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Monday Jan 27"
+      ],
+      "item": [
+        "Steamed Vegetables"
+      ],
+      "display_order": 14,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Monday Jan 27"
+      ],
+      "item": [
+        "Mashed Potatoes"
+      ],
+      "display_order": 15,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Monday Jan 27"
+      ],
+      "item": [
+        "Chocolate Cake"
+      ],
+      "display_order": 16,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Monday Jan 27"
+      ],
+      "item": [
+        "Apple Pie"
+      ],
+      "display_order": 17,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Monday Jan 27"
+      ],
+      "item": [
+        "Tiramisu"
+      ],
+      "display_order": 18,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Monday Jan 27"
+      ],
+      "item": [
+        "Fresh Orange Juice"
+      ],
+      "display_order": 19,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Monday Jan 27"
+      ],
+      "item": [
+        "Coffee"
+      ],
+      "display_order": 20,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Monday Jan 27"
+      ],
+      "item": [
+        "Mineral Water"
+      ],
+      "display_order": 21,
+      "quantity": 150,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Monday Jan 27"
+      ],
+      "item": [
+        "Iced Tea"
+      ],
+      "display_order": 22,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Tuesday Jan 28"
+      ],
+      "item": [
+        "Fresh Orange Juice"
+      ],
+      "display_order": 1,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Tuesday Jan 28"
+      ],
+      "item": [
+        "Coffee"
+      ],
+      "display_order": 2,
+      "quantity": 150,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Tuesday Jan 28"
+      ],
+      "item": [
+        "Iced Tea"
+      ],
+      "display_order": 3,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Tuesday Jan 28"
+      ],
+      "item": [
+        "Spring Rolls"
+      ],
+      "display_order": 4,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Tuesday Jan 28"
+      ],
+      "item": [
+        "Bruschetta"
+      ],
+      "display_order": 5,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Tuesday Jan 28"
+      ],
+      "item": [
+        "Chocolate Cake"
+      ],
+      "display_order": 6,
+      "quantity": 30,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Tuesday Jan 28"
+      ],
+      "item": [
+        "Apple Pie"
+      ],
+      "display_order": 7,
+      "quantity": 30,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Tuesday Jan 28"
+      ],
+      "item": [
+        "Spring Rolls"
+      ],
+      "display_order": 1,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Tuesday Jan 28"
+      ],
+      "item": [
+        "Bruschetta"
+      ],
+      "display_order": 2,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Tuesday Jan 28"
+      ],
+      "item": [
+        "Mozzarella Sticks"
+      ],
+      "display_order": 3,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Tuesday Jan 28"
+      ],
+      "item": [
+        "Caesar Salad"
+      ],
+      "display_order": 4,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Tuesday Jan 28"
+      ],
+      "item": [
+        "Greek Salad"
+      ],
+      "display_order": 5,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Tuesday Jan 28"
+      ],
+      "item": [
+        "Caprese Salad"
+      ],
+      "display_order": 6,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Tuesday Jan 28"
+      ],
+      "item": [
+        "Chicken Noodle Soup"
+      ],
+      "display_order": 7,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Tuesday Jan 28"
+      ],
+      "item": [
+        "Tomato Basil Soup"
+      ],
+      "display_order": 8,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Tuesday Jan 28"
+      ],
+      "item": [
+        "Minestrone Soup"
+      ],
+      "display_order": 9,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Tuesday Jan 28"
+      ],
+      "item": [
+        "Grilled Chicken Breast"
+      ],
+      "display_order": 10,
+      "quantity": 70,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Tuesday Jan 28"
+      ],
+      "item": [
+        "Pasta Carbonara"
+      ],
+      "display_order": 11,
+      "quantity": 70,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Tuesday Jan 28"
+      ],
+      "item": [
+        "Baked Salmon"
+      ],
+      "display_order": 12,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Tuesday Jan 28"
+      ],
+      "item": [
+        "Beef Stew"
+      ],
+      "display_order": 13,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Tuesday Jan 28"
+      ],
+      "item": [
+        "Vegetarian Lasagna"
+      ],
+      "display_order": 14,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Tuesday Jan 28"
+      ],
+      "item": [
+        "Pork Chops"
+      ],
+      "display_order": 15,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Tuesday Jan 28"
+      ],
+      "item": [
+        "French Fries"
+      ],
+      "display_order": 16,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Tuesday Jan 28"
+      ],
+      "item": [
+        "Steamed Vegetables"
+      ],
+      "display_order": 17,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Tuesday Jan 28"
+      ],
+      "item": [
+        "Mashed Potatoes"
+      ],
+      "display_order": 18,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Tuesday Jan 28"
+      ],
+      "item": [
+        "Fresh Orange Juice"
+      ],
+      "display_order": 19,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Tuesday Jan 28"
+      ],
+      "item": [
+        "Coffee"
+      ],
+      "display_order": 20,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Tuesday Jan 28"
+      ],
+      "item": [
+        "Mineral Water"
+      ],
+      "display_order": 21,
+      "quantity": 150,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Tuesday Jan 28"
+      ],
+      "item": [
+        "Iced Tea"
+      ],
+      "display_order": 22,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Tuesday Jan 28"
+      ],
+      "item": [
+        "Mozzarella Sticks"
+      ],
+      "display_order": 1,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Tuesday Jan 28"
+      ],
+      "item": [
+        "Caesar Salad"
+      ],
+      "display_order": 2,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Tuesday Jan 28"
+      ],
+      "item": [
+        "Greek Salad"
+      ],
+      "display_order": 3,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Tuesday Jan 28"
+      ],
+      "item": [
+        "Caprese Salad"
+      ],
+      "display_order": 4,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Tuesday Jan 28"
+      ],
+      "item": [
+        "Chicken Noodle Soup"
+      ],
+      "display_order": 5,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Tuesday Jan 28"
+      ],
+      "item": [
+        "Tomato Basil Soup"
+      ],
+      "display_order": 6,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Tuesday Jan 28"
+      ],
+      "item": [
+        "Grilled Chicken Breast"
+      ],
+      "display_order": 7,
+      "quantity": 70,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Tuesday Jan 28"
+      ],
+      "item": [
+        "Pasta Carbonara"
+      ],
+      "display_order": 8,
+      "quantity": 70,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Tuesday Jan 28"
+      ],
+      "item": [
+        "Baked Salmon"
+      ],
+      "display_order": 9,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Tuesday Jan 28"
+      ],
+      "item": [
+        "Beef Stew"
+      ],
+      "display_order": 10,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Tuesday Jan 28"
+      ],
+      "item": [
+        "Vegetarian Lasagna"
+      ],
+      "display_order": 11,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Tuesday Jan 28"
+      ],
+      "item": [
+        "Pork Chops"
+      ],
+      "display_order": 12,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Tuesday Jan 28"
+      ],
+      "item": [
+        "French Fries"
+      ],
+      "display_order": 13,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Tuesday Jan 28"
+      ],
+      "item": [
+        "Steamed Vegetables"
+      ],
+      "display_order": 14,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Tuesday Jan 28"
+      ],
+      "item": [
+        "Mashed Potatoes"
+      ],
+      "display_order": 15,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Tuesday Jan 28"
+      ],
+      "item": [
+        "Chocolate Cake"
+      ],
+      "display_order": 16,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Tuesday Jan 28"
+      ],
+      "item": [
+        "Apple Pie"
+      ],
+      "display_order": 17,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Tuesday Jan 28"
+      ],
+      "item": [
+        "Tiramisu"
+      ],
+      "display_order": 18,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Tuesday Jan 28"
+      ],
+      "item": [
+        "Fresh Orange Juice"
+      ],
+      "display_order": 19,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Tuesday Jan 28"
+      ],
+      "item": [
+        "Coffee"
+      ],
+      "display_order": 20,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Tuesday Jan 28"
+      ],
+      "item": [
+        "Mineral Water"
+      ],
+      "display_order": 21,
+      "quantity": 150,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Tuesday Jan 28"
+      ],
+      "item": [
+        "Iced Tea"
+      ],
+      "display_order": 22,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Wednesday Jan 29"
+      ],
+      "item": [
+        "Fresh Orange Juice"
+      ],
+      "display_order": 1,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Wednesday Jan 29"
+      ],
+      "item": [
+        "Coffee"
+      ],
+      "display_order": 2,
+      "quantity": 150,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Wednesday Jan 29"
+      ],
+      "item": [
+        "Iced Tea"
+      ],
+      "display_order": 3,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Wednesday Jan 29"
+      ],
+      "item": [
+        "Spring Rolls"
+      ],
+      "display_order": 4,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Wednesday Jan 29"
+      ],
+      "item": [
+        "Bruschetta"
+      ],
+      "display_order": 5,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Wednesday Jan 29"
+      ],
+      "item": [
+        "Chocolate Cake"
+      ],
+      "display_order": 6,
+      "quantity": 30,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Wednesday Jan 29"
+      ],
+      "item": [
+        "Apple Pie"
+      ],
+      "display_order": 7,
+      "quantity": 30,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Wednesday Jan 29"
+      ],
+      "item": [
+        "Spring Rolls"
+      ],
+      "display_order": 1,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Wednesday Jan 29"
+      ],
+      "item": [
+        "Bruschetta"
+      ],
+      "display_order": 2,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Wednesday Jan 29"
+      ],
+      "item": [
+        "Mozzarella Sticks"
+      ],
+      "display_order": 3,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Wednesday Jan 29"
+      ],
+      "item": [
+        "Caesar Salad"
+      ],
+      "display_order": 4,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Wednesday Jan 29"
+      ],
+      "item": [
+        "Greek Salad"
+      ],
+      "display_order": 5,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Wednesday Jan 29"
+      ],
+      "item": [
+        "Caprese Salad"
+      ],
+      "display_order": 6,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Wednesday Jan 29"
+      ],
+      "item": [
+        "Chicken Noodle Soup"
+      ],
+      "display_order": 7,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Wednesday Jan 29"
+      ],
+      "item": [
+        "Tomato Basil Soup"
+      ],
+      "display_order": 8,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Wednesday Jan 29"
+      ],
+      "item": [
+        "Minestrone Soup"
+      ],
+      "display_order": 9,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Wednesday Jan 29"
+      ],
+      "item": [
+        "Grilled Chicken Breast"
+      ],
+      "display_order": 10,
+      "quantity": 70,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Wednesday Jan 29"
+      ],
+      "item": [
+        "Pasta Carbonara"
+      ],
+      "display_order": 11,
+      "quantity": 70,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Wednesday Jan 29"
+      ],
+      "item": [
+        "Baked Salmon"
+      ],
+      "display_order": 12,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Wednesday Jan 29"
+      ],
+      "item": [
+        "Beef Stew"
+      ],
+      "display_order": 13,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Wednesday Jan 29"
+      ],
+      "item": [
+        "Vegetarian Lasagna"
+      ],
+      "display_order": 14,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Wednesday Jan 29"
+      ],
+      "item": [
+        "Pork Chops"
+      ],
+      "display_order": 15,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Wednesday Jan 29"
+      ],
+      "item": [
+        "French Fries"
+      ],
+      "display_order": 16,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Wednesday Jan 29"
+      ],
+      "item": [
+        "Steamed Vegetables"
+      ],
+      "display_order": 17,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Wednesday Jan 29"
+      ],
+      "item": [
+        "Mashed Potatoes"
+      ],
+      "display_order": 18,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Wednesday Jan 29"
+      ],
+      "item": [
+        "Fresh Orange Juice"
+      ],
+      "display_order": 19,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Wednesday Jan 29"
+      ],
+      "item": [
+        "Coffee"
+      ],
+      "display_order": 20,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Wednesday Jan 29"
+      ],
+      "item": [
+        "Mineral Water"
+      ],
+      "display_order": 21,
+      "quantity": 150,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Wednesday Jan 29"
+      ],
+      "item": [
+        "Iced Tea"
+      ],
+      "display_order": 22,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Wednesday Jan 29"
+      ],
+      "item": [
+        "Mozzarella Sticks"
+      ],
+      "display_order": 1,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Wednesday Jan 29"
+      ],
+      "item": [
+        "Caesar Salad"
+      ],
+      "display_order": 2,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Wednesday Jan 29"
+      ],
+      "item": [
+        "Greek Salad"
+      ],
+      "display_order": 3,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Wednesday Jan 29"
+      ],
+      "item": [
+        "Caprese Salad"
+      ],
+      "display_order": 4,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Wednesday Jan 29"
+      ],
+      "item": [
+        "Chicken Noodle Soup"
+      ],
+      "display_order": 5,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Wednesday Jan 29"
+      ],
+      "item": [
+        "Tomato Basil Soup"
+      ],
+      "display_order": 6,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Wednesday Jan 29"
+      ],
+      "item": [
+        "Grilled Chicken Breast"
+      ],
+      "display_order": 7,
+      "quantity": 70,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Wednesday Jan 29"
+      ],
+      "item": [
+        "Pasta Carbonara"
+      ],
+      "display_order": 8,
+      "quantity": 70,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Wednesday Jan 29"
+      ],
+      "item": [
+        "Baked Salmon"
+      ],
+      "display_order": 9,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Wednesday Jan 29"
+      ],
+      "item": [
+        "Beef Stew"
+      ],
+      "display_order": 10,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Wednesday Jan 29"
+      ],
+      "item": [
+        "Vegetarian Lasagna"
+      ],
+      "display_order": 11,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Wednesday Jan 29"
+      ],
+      "item": [
+        "Pork Chops"
+      ],
+      "display_order": 12,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Wednesday Jan 29"
+      ],
+      "item": [
+        "French Fries"
+      ],
+      "display_order": 13,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Wednesday Jan 29"
+      ],
+      "item": [
+        "Steamed Vegetables"
+      ],
+      "display_order": 14,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Wednesday Jan 29"
+      ],
+      "item": [
+        "Mashed Potatoes"
+      ],
+      "display_order": 15,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Wednesday Jan 29"
+      ],
+      "item": [
+        "Chocolate Cake"
+      ],
+      "display_order": 16,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Wednesday Jan 29"
+      ],
+      "item": [
+        "Apple Pie"
+      ],
+      "display_order": 17,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Wednesday Jan 29"
+      ],
+      "item": [
+        "Tiramisu"
+      ],
+      "display_order": 18,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Wednesday Jan 29"
+      ],
+      "item": [
+        "Fresh Orange Juice"
+      ],
+      "display_order": 19,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Wednesday Jan 29"
+      ],
+      "item": [
+        "Coffee"
+      ],
+      "display_order": 20,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Wednesday Jan 29"
+      ],
+      "item": [
+        "Mineral Water"
+      ],
+      "display_order": 21,
+      "quantity": 150,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Wednesday Jan 29"
+      ],
+      "item": [
+        "Iced Tea"
+      ],
+      "display_order": 22,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Thursday Jan 30"
+      ],
+      "item": [
+        "Fresh Orange Juice"
+      ],
+      "display_order": 1,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Thursday Jan 30"
+      ],
+      "item": [
+        "Coffee"
+      ],
+      "display_order": 2,
+      "quantity": 150,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Thursday Jan 30"
+      ],
+      "item": [
+        "Iced Tea"
+      ],
+      "display_order": 3,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Thursday Jan 30"
+      ],
+      "item": [
+        "Spring Rolls"
+      ],
+      "display_order": 4,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Thursday Jan 30"
+      ],
+      "item": [
+        "Bruschetta"
+      ],
+      "display_order": 5,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Thursday Jan 30"
+      ],
+      "item": [
+        "Chocolate Cake"
+      ],
+      "display_order": 6,
+      "quantity": 30,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Thursday Jan 30"
+      ],
+      "item": [
+        "Apple Pie"
+      ],
+      "display_order": 7,
+      "quantity": 30,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Thursday Jan 30"
+      ],
+      "item": [
+        "Spring Rolls"
+      ],
+      "display_order": 1,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Thursday Jan 30"
+      ],
+      "item": [
+        "Bruschetta"
+      ],
+      "display_order": 2,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Thursday Jan 30"
+      ],
+      "item": [
+        "Mozzarella Sticks"
+      ],
+      "display_order": 3,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Thursday Jan 30"
+      ],
+      "item": [
+        "Caesar Salad"
+      ],
+      "display_order": 4,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Thursday Jan 30"
+      ],
+      "item": [
+        "Greek Salad"
+      ],
+      "display_order": 5,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Thursday Jan 30"
+      ],
+      "item": [
+        "Caprese Salad"
+      ],
+      "display_order": 6,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Thursday Jan 30"
+      ],
+      "item": [
+        "Chicken Noodle Soup"
+      ],
+      "display_order": 7,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Thursday Jan 30"
+      ],
+      "item": [
+        "Tomato Basil Soup"
+      ],
+      "display_order": 8,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Thursday Jan 30"
+      ],
+      "item": [
+        "Minestrone Soup"
+      ],
+      "display_order": 9,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Thursday Jan 30"
+      ],
+      "item": [
+        "Grilled Chicken Breast"
+      ],
+      "display_order": 10,
+      "quantity": 70,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Thursday Jan 30"
+      ],
+      "item": [
+        "Pasta Carbonara"
+      ],
+      "display_order": 11,
+      "quantity": 70,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Thursday Jan 30"
+      ],
+      "item": [
+        "Baked Salmon"
+      ],
+      "display_order": 12,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Thursday Jan 30"
+      ],
+      "item": [
+        "Beef Stew"
+      ],
+      "display_order": 13,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Thursday Jan 30"
+      ],
+      "item": [
+        "Vegetarian Lasagna"
+      ],
+      "display_order": 14,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Thursday Jan 30"
+      ],
+      "item": [
+        "Pork Chops"
+      ],
+      "display_order": 15,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Thursday Jan 30"
+      ],
+      "item": [
+        "French Fries"
+      ],
+      "display_order": 16,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Thursday Jan 30"
+      ],
+      "item": [
+        "Steamed Vegetables"
+      ],
+      "display_order": 17,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Thursday Jan 30"
+      ],
+      "item": [
+        "Mashed Potatoes"
+      ],
+      "display_order": 18,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Thursday Jan 30"
+      ],
+      "item": [
+        "Fresh Orange Juice"
+      ],
+      "display_order": 19,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Thursday Jan 30"
+      ],
+      "item": [
+        "Coffee"
+      ],
+      "display_order": 20,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Thursday Jan 30"
+      ],
+      "item": [
+        "Mineral Water"
+      ],
+      "display_order": 21,
+      "quantity": 150,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Thursday Jan 30"
+      ],
+      "item": [
+        "Iced Tea"
+      ],
+      "display_order": 22,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Thursday Jan 30"
+      ],
+      "item": [
+        "Mozzarella Sticks"
+      ],
+      "display_order": 1,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Thursday Jan 30"
+      ],
+      "item": [
+        "Caesar Salad"
+      ],
+      "display_order": 2,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Thursday Jan 30"
+      ],
+      "item": [
+        "Greek Salad"
+      ],
+      "display_order": 3,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Thursday Jan 30"
+      ],
+      "item": [
+        "Caprese Salad"
+      ],
+      "display_order": 4,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Thursday Jan 30"
+      ],
+      "item": [
+        "Chicken Noodle Soup"
+      ],
+      "display_order": 5,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Thursday Jan 30"
+      ],
+      "item": [
+        "Tomato Basil Soup"
+      ],
+      "display_order": 6,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Thursday Jan 30"
+      ],
+      "item": [
+        "Grilled Chicken Breast"
+      ],
+      "display_order": 7,
+      "quantity": 70,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Thursday Jan 30"
+      ],
+      "item": [
+        "Pasta Carbonara"
+      ],
+      "display_order": 8,
+      "quantity": 70,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Thursday Jan 30"
+      ],
+      "item": [
+        "Baked Salmon"
+      ],
+      "display_order": 9,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Thursday Jan 30"
+      ],
+      "item": [
+        "Beef Stew"
+      ],
+      "display_order": 10,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Thursday Jan 30"
+      ],
+      "item": [
+        "Vegetarian Lasagna"
+      ],
+      "display_order": 11,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Thursday Jan 30"
+      ],
+      "item": [
+        "Pork Chops"
+      ],
+      "display_order": 12,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Thursday Jan 30"
+      ],
+      "item": [
+        "French Fries"
+      ],
+      "display_order": 13,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Thursday Jan 30"
+      ],
+      "item": [
+        "Steamed Vegetables"
+      ],
+      "display_order": 14,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Thursday Jan 30"
+      ],
+      "item": [
+        "Mashed Potatoes"
+      ],
+      "display_order": 15,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Thursday Jan 30"
+      ],
+      "item": [
+        "Chocolate Cake"
+      ],
+      "display_order": 16,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Thursday Jan 30"
+      ],
+      "item": [
+        "Apple Pie"
+      ],
+      "display_order": 17,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Thursday Jan 30"
+      ],
+      "item": [
+        "Tiramisu"
+      ],
+      "display_order": 18,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Thursday Jan 30"
+      ],
+      "item": [
+        "Fresh Orange Juice"
+      ],
+      "display_order": 19,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Thursday Jan 30"
+      ],
+      "item": [
+        "Coffee"
+      ],
+      "display_order": 20,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Thursday Jan 30"
+      ],
+      "item": [
+        "Mineral Water"
+      ],
+      "display_order": 21,
+      "quantity": 150,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Thursday Jan 30"
+      ],
+      "item": [
+        "Iced Tea"
+      ],
+      "display_order": 22,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Friday Jan 31"
+      ],
+      "item": [
+        "Fresh Orange Juice"
+      ],
+      "display_order": 1,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Friday Jan 31"
+      ],
+      "item": [
+        "Coffee"
+      ],
+      "display_order": 2,
+      "quantity": 150,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Friday Jan 31"
+      ],
+      "item": [
+        "Iced Tea"
+      ],
+      "display_order": 3,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Friday Jan 31"
+      ],
+      "item": [
+        "Spring Rolls"
+      ],
+      "display_order": 4,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Friday Jan 31"
+      ],
+      "item": [
+        "Bruschetta"
+      ],
+      "display_order": 5,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Friday Jan 31"
+      ],
+      "item": [
+        "Chocolate Cake"
+      ],
+      "display_order": 6,
+      "quantity": 30,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Breakfast - Friday Jan 31"
+      ],
+      "item": [
+        "Apple Pie"
+      ],
+      "display_order": 7,
+      "quantity": 30,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 31"
+      ],
+      "item": [
+        "Spring Rolls"
+      ],
+      "display_order": 1,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 31"
+      ],
+      "item": [
+        "Bruschetta"
+      ],
+      "display_order": 2,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 31"
+      ],
+      "item": [
+        "Mozzarella Sticks"
+      ],
+      "display_order": 3,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 31"
+      ],
+      "item": [
+        "Caesar Salad"
+      ],
+      "display_order": 4,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 31"
+      ],
+      "item": [
+        "Greek Salad"
+      ],
+      "display_order": 5,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 31"
+      ],
+      "item": [
+        "Caprese Salad"
+      ],
+      "display_order": 6,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 31"
+      ],
+      "item": [
+        "Chicken Noodle Soup"
+      ],
+      "display_order": 7,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 31"
+      ],
+      "item": [
+        "Tomato Basil Soup"
+      ],
+      "display_order": 8,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 31"
+      ],
+      "item": [
+        "Minestrone Soup"
+      ],
+      "display_order": 9,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 31"
+      ],
+      "item": [
+        "Grilled Chicken Breast"
+      ],
+      "display_order": 10,
+      "quantity": 70,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 31"
+      ],
+      "item": [
+        "Pasta Carbonara"
+      ],
+      "display_order": 11,
+      "quantity": 70,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 31"
+      ],
+      "item": [
+        "Baked Salmon"
+      ],
+      "display_order": 12,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 31"
+      ],
+      "item": [
+        "Beef Stew"
+      ],
+      "display_order": 13,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 31"
+      ],
+      "item": [
+        "Vegetarian Lasagna"
+      ],
+      "display_order": 14,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 31"
+      ],
+      "item": [
+        "Pork Chops"
+      ],
+      "display_order": 15,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 31"
+      ],
+      "item": [
+        "French Fries"
+      ],
+      "display_order": 16,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 31"
+      ],
+      "item": [
+        "Steamed Vegetables"
+      ],
+      "display_order": 17,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 31"
+      ],
+      "item": [
+        "Mashed Potatoes"
+      ],
+      "display_order": 18,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 31"
+      ],
+      "item": [
+        "Fresh Orange Juice"
+      ],
+      "display_order": 19,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 31"
+      ],
+      "item": [
+        "Coffee"
+      ],
+      "display_order": 20,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 31"
+      ],
+      "item": [
+        "Mineral Water"
+      ],
+      "display_order": 21,
+      "quantity": 150,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Lunch - Friday Jan 31"
+      ],
+      "item": [
+        "Iced Tea"
+      ],
+      "display_order": 22,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 31"
+      ],
+      "item": [
+        "Mozzarella Sticks"
+      ],
+      "display_order": 1,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 31"
+      ],
+      "item": [
+        "Caesar Salad"
+      ],
+      "display_order": 2,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 31"
+      ],
+      "item": [
+        "Greek Salad"
+      ],
+      "display_order": 3,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 31"
+      ],
+      "item": [
+        "Caprese Salad"
+      ],
+      "display_order": 4,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 31"
+      ],
+      "item": [
+        "Chicken Noodle Soup"
+      ],
+      "display_order": 5,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 31"
+      ],
+      "item": [
+        "Tomato Basil Soup"
+      ],
+      "display_order": 6,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 31"
+      ],
+      "item": [
+        "Grilled Chicken Breast"
+      ],
+      "display_order": 7,
+      "quantity": 70,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 31"
+      ],
+      "item": [
+        "Pasta Carbonara"
+      ],
+      "display_order": 8,
+      "quantity": 70,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 31"
+      ],
+      "item": [
+        "Baked Salmon"
+      ],
+      "display_order": 9,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 31"
+      ],
+      "item": [
+        "Beef Stew"
+      ],
+      "display_order": 10,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 31"
+      ],
+      "item": [
+        "Vegetarian Lasagna"
+      ],
+      "display_order": 11,
+      "quantity": 60,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 31"
+      ],
+      "item": [
+        "Pork Chops"
+      ],
+      "display_order": 12,
+      "quantity": 50,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 31"
+      ],
+      "item": [
+        "French Fries"
+      ],
+      "display_order": 13,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 31"
+      ],
+      "item": [
+        "Steamed Vegetables"
+      ],
+      "display_order": 14,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 31"
+      ],
+      "item": [
+        "Mashed Potatoes"
+      ],
+      "display_order": 15,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 31"
+      ],
+      "item": [
+        "Chocolate Cake"
+      ],
+      "display_order": 16,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 31"
+      ],
+      "item": [
+        "Apple Pie"
+      ],
+      "display_order": 17,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 31"
+      ],
+      "item": [
+        "Tiramisu"
+      ],
+      "display_order": 18,
+      "quantity": 40,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 31"
+      ],
+      "item": [
+        "Fresh Orange Juice"
+      ],
+      "display_order": 19,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 31"
+      ],
+      "item": [
+        "Coffee"
+      ],
+      "display_order": 20,
+      "quantity": 100,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 31"
+      ],
+      "item": [
+        "Mineral Water"
+      ],
+      "display_order": 21,
+      "quantity": 150,
+      "override_price": null,
+      "is_permanent": false
+    }
+  },
+  {
+    "model": "menus.menuitem",
+    "pk": null,
+    "fields": {
+      "created_at": "2026-01-22T08:00:00Z",
+      "updated_at": "2026-01-22T08:00:00Z",
+      "deleted_at": null,
+      "is_active": true,
+      "menu": [
+        "Dinner - Friday Jan 31"
+      ],
+      "item": [
+        "Iced Tea"
+      ],
+      "display_order": 22,
+      "quantity": 80,
+      "override_price": null,
+      "is_permanent": false
+    }
+  }
+]
