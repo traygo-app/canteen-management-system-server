@@ -199,21 +199,21 @@ class MenuViewsTests(APITestCase):
             end_time=self.now + timedelta(days=1, hours=3),
         )
         self.client.force_authenticate(user=self.user)
-        response = self.client.get("/menus/")
+        response = self.client.get("/menus")
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_menus_list_unauthenticated(self):
-        response = self.client.get("/menus/")
+        response = self.client.get("/menus")
         self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
 
     def test_items_view_not_implemented(self):
         self.client.force_authenticate(user=self.admin)
-        response = self.client.get("/menus/items/")
+        response = self.client.get("/items")
         self.assertEqual(response.status_code, status.HTTP_501_NOT_IMPLEMENTED)
 
     def test_categories_view_not_implemented(self):
         self.client.force_authenticate(user=self.admin)
-        response = self.client.get("/menus/categories/")
+        response = self.client.get("/categories")
         self.assertEqual(response.status_code, status.HTTP_501_NOT_IMPLEMENTED)
 
     def test_menu_detail_not_implemented(self):
@@ -223,5 +223,5 @@ class MenuViewsTests(APITestCase):
             end_time=self.now + timedelta(hours=4),
         )
         self.client.force_authenticate(user=self.admin)
-        response = self.client.get(f"/menus/{menu.id}/")
+        response = self.client.get(f"/menus/{menu.id}")
         self.assertEqual(response.status_code, status.HTTP_501_NOT_IMPLEMENTED)

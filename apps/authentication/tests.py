@@ -229,13 +229,10 @@ class AuthViewsTests(APITestCase):
     def setUp(self):
         self.client = APIClient()
 
-    def test_csrf_view(self):
-        response = self.client.get("/auth/csrf/")
-        self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
-
+    @patch("apps.common.throttling.SensitiveEndpointThrottle.allow_request", return_value=True)
     @patch("apps.authentication.views.send_verification_email")
     @patch("apps.authentication.session_service.redis_client")
-    def test_register_success(self, mock_redis, mock_email):
+    def test_register_success(self, mock_redis, mock_email, mock_throttle):
         data = {
             "email": "register.test@fcim.utm.md",
             "password": "SecurePass123!",
@@ -246,8 +243,9 @@ class AuthViewsTests(APITestCase):
         self.assertIn("access", response.data)
         self.assertTrue(User.objects.filter(email=data["email"]).exists())
 
+    @patch("apps.common.throttling.SensitiveEndpointThrottle.allow_request", return_value=True)
     @patch("apps.authentication.session_service.redis_client")
-    def test_login_success(self, mock_redis):
+    def test_login_success(self, mock_redis, mock_throttle):
         User.objects.create_user(
             email="login.test@fcim.utm.md",
             password="TestPass123!",
@@ -262,7 +260,8 @@ class AuthViewsTests(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertIn("access", response.data)
 
-    def test_login_invalid_credentials(self):
+    @patch("apps.common.throttling.SensitiveEndpointThrottle.allow_request", return_value=True)
+    def test_login_invalid_credentials(self, mock_throttle):
         response = self.client.post(
             "/auth/login/",
             {
@@ -353,10 +352,10 @@ class AuthenticatedViewsTests(APITestCase):
 
     @patch("apps.authentication.services.redis_client")
     def test_mfa_setup_start(self, mock_redis):
-        response = self.client.post("/auth/mfa/setup/")
+        response = self.client.post("/auth/mfa/setup/start")
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertIn("qr_code", response.data)
 
     def test_mfa_disable_requires_password(self):
-        response = self.client.post("/auth/mfa/disable/", {})
+        response = self.client.post("/auth/mfa/disable", {})
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)

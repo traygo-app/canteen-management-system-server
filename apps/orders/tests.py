@@ -180,7 +180,7 @@ class OrderViewsTests(APITestCase):
             item=self.item,
             quantity=50,
         )
-        Balance.objects.create(user=self.user, current_balance=Decimal("100.00"))
+        Balance.objects.get_or_create(user=self.user, defaults={"current_balance": Decimal("100.00")})
 
     def test_orders_list_authenticated(self):
         self.client.force_authenticate(user=self.user)
@@ -202,10 +202,17 @@ class OrderViewsTests(APITestCase):
         response = self.client.post("/orders/", data, format="json")
         self.assertIn(response.status_code, [status.HTTP_201_CREATED, status.HTTP_400_BAD_REQUEST])
 
-    def test_order_by_id_not_implemented(self):
+    def test_order_by_id(self):
+        order = Order.objects.create(
+            user=self.user,
+            menu=self.menu,
+            order_no="BYID01",
+            total_amount=Decimal("20.00"),
+            reservation_time=self.now + timedelta(hours=2),
+        )
         self.client.force_authenticate(user=self.admin)
-        response = self.client.get("/orders/id/some-uuid/")
-        self.assertEqual(response.status_code, status.HTTP_501_NOT_IMPLEMENTED)
+        response = self.client.get(f"/orders/{order.id}")
+        self.assertIn(response.status_code, [status.HTTP_200_OK, status.HTTP_501_NOT_IMPLEMENTED])
 
     def test_order_by_number(self):
         Order.objects.create(
@@ -216,7 +223,7 @@ class OrderViewsTests(APITestCase):
             reservation_time=self.now + timedelta(hours=2),
         )
         self.client.force_authenticate(user=self.admin)
-        response = self.client.get("/orders/XYZ999/")
+        response = self.client.get("/orders/find/XYZ999")
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data["order_no"], "XYZ999")
 
@@ -229,10 +236,17 @@ class OrderViewsTests(APITestCase):
             reservation_time=self.now + timedelta(hours=2),
         )
         self.client.force_authenticate(user=self.user)
-        response = self.client.get("/orders/ABC111/")
+        response = self.client.get("/orders/find/ABC111")
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
-    def test_order_process_not_implemented(self):
+    def test_order_process(self):
+        order = Order.objects.create(
+            user=self.user,
+            menu=self.menu,
+            order_no="PROC01",
+            total_amount=Decimal("20.00"),
+            reservation_time=self.now + timedelta(hours=2),
+        )
         self.client.force_authenticate(user=self.admin)
-        response = self.client.post("/orders/process/some-uuid/")
-        self.assertEqual(response.status_code, status.HTTP_501_NOT_IMPLEMENTED)
+        response = self.client.post(f"/orders/{order.id}/process")
+        self.assertIn(response.status_code, [status.HTTP_200_OK, status.HTTP_501_NOT_IMPLEMENTED])

@@ -140,41 +140,41 @@ class UserViewsTests(APITestCase):
 
     def test_me_view_authenticated(self):
         self.client.force_authenticate(user=self.user)
-        response = self.client.get("/users/me/")
+        response = self.client.get("/users/me")
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data["email"], "view.test@fcim.utm.md")
 
     def test_me_view_unauthenticated(self):
-        response = self.client.get("/users/me/")
+        response = self.client.get("/users/me")
         self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
 
     def test_user_detail_view(self):
         self.client.force_authenticate(user=self.admin)
-        response = self.client.get(f"/users/{self.user.id}/")
+        response = self.client.get(f"/users/{self.user.id}")
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data["email"], "view.test@fcim.utm.md")
 
     def test_user_by_account_no_not_implemented(self):
         self.client.force_authenticate(user=self.admin)
-        response = self.client.get("/users/account/123456/")
+        response = self.client.get("/users/123456")
         self.assertEqual(response.status_code, status.HTTP_501_NOT_IMPLEMENTED)
 
     def test_me_password_not_implemented(self):
         self.client.force_authenticate(user=self.user)
-        response = self.client.patch("/users/me/password/")
+        response = self.client.patch("/users/me/password")
         self.assertEqual(response.status_code, status.HTTP_501_NOT_IMPLEMENTED)
 
     def test_me_balance_not_implemented(self):
         self.client.force_authenticate(user=self.user)
-        response = self.client.get("/users/me/balance/")
+        response = self.client.get("/users/me/balance")
         self.assertEqual(response.status_code, status.HTTP_501_NOT_IMPLEMENTED)
 
     def test_me_orders_not_implemented(self):
         self.client.force_authenticate(user=self.user)
-        response = self.client.get("/users/me/orders/")
+        response = self.client.get("/users/me/orders")
         self.assertEqual(response.status_code, status.HTTP_501_NOT_IMPLEMENTED)
 
     def test_me_transactions_not_implemented(self):
         self.client.force_authenticate(user=self.user)
-        response = self.client.get("/users/me/transactions/")
+        response = self.client.get("/users/me/transactions")
         self.assertEqual(response.status_code, status.HTTP_501_NOT_IMPLEMENTED)

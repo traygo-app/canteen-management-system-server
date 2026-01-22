@@ -46,9 +46,9 @@ class WebhookHandlerTests(TestCase):
             email="webhook.test@fcim.utm.md",
             password="TestPass123!",
         )
-        self.balance = Balance.objects.create(
+        self.balance, _ = Balance.objects.get_or_create(
             user=self.user,
-            current_balance=Decimal("50.00"),
+            defaults={"current_balance": Decimal("50.00")},
         )
 
     def test_handler_no_event_raises(self):
@@ -144,10 +144,12 @@ class CheckoutSessionHandlerTests(TestCase):
             email="checkout.test@fcim.utm.md",
             password="TestPass123!",
         )
-        self.balance = Balance.objects.create(
+        self.balance, _ = Balance.objects.get_or_create(
             user=self.user,
-            current_balance=Decimal("100.00"),
+            defaults={"current_balance": Decimal("100.00")},
         )
+        self.balance.current_balance = Decimal("100.00")
+        self.balance.save()
         self.tx = Transaction.objects.create(
             balance=self.balance,
             type="deposit",

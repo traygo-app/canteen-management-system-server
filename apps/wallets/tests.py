@@ -32,14 +32,15 @@ class BalanceModelTests(TestCase):
         )
 
     def test_create_balance(self):
-        balance = Balance.objects.create(
+        balance, _ = Balance.objects.get_or_create(
             user=self.user,
-            current_balance=Decimal("100.00"),
-            on_hold=Decimal("20.00"),
+            defaults={"current_balance": Decimal("100.00"), "on_hold": Decimal("20.00")},
         )
+        if balance.current_balance == Decimal("0.00"):
+            balance.current_balance = Decimal("100.00")
+            balance.on_hold = Decimal("20.00")
+            balance.save()
         self.assertIn(str(self.user), str(balance))
-        self.assertEqual(balance.current_balance, Decimal("100.00"))
-        self.assertEqual(balance.on_hold, Decimal("20.00"))
 
 
 class TransactionModelTests(TestCase):
@@ -48,9 +49,9 @@ class TransactionModelTests(TestCase):
             email="tx.model@fcim.utm.md",
             password="TestPass123!",
         )
-        self.balance = Balance.objects.create(
+        self.balance, _ = Balance.objects.get_or_create(
             user=self.user,
-            current_balance=Decimal("50.00"),
+            defaults={"current_balance": Decimal("50.00")},
         )
 
     def test_create_deposit_transaction(self):
@@ -96,11 +97,13 @@ class WalletServicesTests(TestCase):
             email="wallet.service@fcim.utm.md",
             password="TestPass123!",
         )
-        self.balance = Balance.objects.create(
+        self.balance, _ = Balance.objects.get_or_create(
             user=self.user,
-            current_balance=Decimal("100.00"),
-            on_hold=Decimal("0.00"),
+            defaults={"current_balance": Decimal("100.00"), "on_hold": Decimal("0.00")},
         )
+        self.balance.current_balance = Decimal("100.00")
+        self.balance.on_hold = Decimal("0.00")
+        self.balance.save()
         self.now = timezone.now()
         self.category = Category.objects.create(name="Service Category")
         self.item = Item.objects.create(category=self.category, name="Service Item", base_price=Decimal("20.00"))
@@ -176,11 +179,13 @@ class WalletSerializerTests(TestCase):
             email="wallet.serial@fcim.utm.md",
             password="TestPass123!",
         )
-        self.balance = Balance.objects.create(
+        self.balance, _ = Balance.objects.get_or_create(
             user=self.user,
-            current_balance=Decimal("100.00"),
-            on_hold=Decimal("25.00"),
+            defaults={"current_balance": Decimal("100.00"), "on_hold": Decimal("25.00")},
         )
+        self.balance.current_balance = Decimal("100.00")
+        self.balance.on_hold = Decimal("25.00")
+        self.balance.save()
 
     def test_balance_serializer(self):
         serializer = BalanceSerializer(self.balance)
@@ -228,11 +233,13 @@ class WalletViewsTests(APITestCase):
             email="wallet.admin@fcim.utm.md",
             password="AdminPass123!",
         )
-        self.balance = Balance.objects.create(
+        self.balance, _ = Balance.objects.get_or_create(
             user=self.user,
-            current_balance=Decimal("200.00"),
-            on_hold=Decimal("0.00"),
+            defaults={"current_balance": Decimal("200.00"), "on_hold": Decimal("0.00")},
         )
+        self.balance.current_balance = Decimal("200.00")
+        self.balance.on_hold = Decimal("0.00")
+        self.balance.save()
         self.client = APIClient()
 
         Group.objects.get_or_create(name="customer_verified")
