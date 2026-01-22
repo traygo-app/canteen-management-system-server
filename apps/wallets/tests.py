@@ -183,6 +183,21 @@ class WalletSerializerTests(TestCase):
             user=self.user,
             defaults={"current_balance": Decimal("100.00"), "on_hold": Decimal("25.00")},
         )
+        self.now = timezone.now()
+        self.category = Category.objects.create(name="Serial Category")
+        self.item = Item.objects.create(category=self.category, name="Serial Item", base_price=Decimal("10.00"))
+        self.menu = Menu.objects.create(
+            name="Serial Menu",
+            start_time=self.now + timedelta(hours=1),
+            end_time=self.now + timedelta(hours=4),
+        )
+        self.order = Order.objects.create(
+            user=self.user,
+            menu=self.menu,
+            order_no="SER001",
+            total_amount=Decimal("20.00"),
+            reservation_time=self.now + timedelta(hours=2),
+        )
         self.balance.current_balance = Decimal("100.00")
         self.balance.on_hold = Decimal("25.00")
         self.balance.save()
@@ -197,6 +212,7 @@ class WalletSerializerTests(TestCase):
     def test_transaction_signed_amount_payment(self):
         tx = Transaction.objects.create(
             balance=self.balance,
+            order=self.order,
             type=TransactionType.PAYMENT,
             amount=Decimal("20.00"),
             remaining_balance=Decimal("80.00"),
