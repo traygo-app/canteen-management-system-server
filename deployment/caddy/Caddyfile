@@ -39,7 +39,8 @@
 		reverse_proxy web:8000
 	}
 
-    handle /monitoring {
+    handle /monitoring/* {
+        rewrite * /{path.1}
 		reverse_proxy grafana:3000
 	}
 	# All other requests to Django (with rate limiting)
