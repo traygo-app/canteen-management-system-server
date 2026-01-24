@@ -96,7 +96,7 @@ jobs:
           username: ${{ secrets.DROPLET_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT || 22 }}
-          source: "compose.deploy.yaml,deployment/caddy/Caddyfile"
+          source: "compose.deploy.yaml,deployment/caddy/Caddyfile,deployment/monitoring"
           target: "~/canteen-app"
           strip_components: 0
 

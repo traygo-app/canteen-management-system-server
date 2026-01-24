@@ -395,6 +395,7 @@ STRIPE_RETURN_URL = env("STRIPE_RETURN_URL", default=f"{FRONTEND_URL}/wallet/top
 
 # Stripe Top-up Limits
 STRIPE_MIN_TOP_UP = Decimal(env("STRIPE_MIN_TOP_UP", default="5.00"))
+STRIPE_MAX_TOP_UP = Decimal(env("STRIPE_MAX_TOP_UP", default="500.00"))
 
 # Logging Configuration
 LOG_DIR = BASE_DIR / env("LOG_DIR")
@@ -509,4 +510,12 @@ LOGGING = {
         "level": "DEBUG" if DEBUG else "INFO",
     },
 }
-STRIPE_MAX_TOP_UP = Decimal(env("STRIPE_MAX_TOP_UP", default="500.00"))
+
+# Monitoring
+OTEL_SERVICE_NAME = env("OTEL_SERVICE_NAME", default="")
+OTEL_EXPORTER_OTLP_ENDPOINT = env("OTEL_EXPORTER_OTLP_ENDPOINT", default="")
+OTEL_EXPORTER_OTLP_PROTOCOL = env("OTEL_EXPORTER_OTLP_PROTOCOL", default="")
+OTEL_METRICS_EXPORT_INTERVAL = env.int("OTEL_METRICS_EXPORT_INTERVAL", default=0)
+OTEL_PYTHON_LOGGING_AUTO_INSTRUMENTATION_ENABLED = env.bool(
+    "OTEL_PYTHON_LOGGING_AUTO_INSTRUMENTATION_ENABLED", default=False
+)
