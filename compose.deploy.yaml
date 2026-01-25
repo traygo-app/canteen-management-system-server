@@ -119,7 +119,7 @@ services:
       - "3000"
     environment:
       GF_SERVER_DOMAIN: api.traygo.app
-      GF_SERVER_SERVE_FROM_SUB_PATH: "true"
+#      GF_SERVER_SERVE_FROM_SUB_PATH: "true"
       GF_SERVER_ROOT_URL: https://api.traygo.app/grafana/
     depends_on:
       - prometheus
