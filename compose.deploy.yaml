@@ -115,11 +115,13 @@ services:
     volumes:
       - grafana-data:/var/lib/grafana
       - ./deployment/monitoring/grafana-datasources.yml:/etc/grafana/provisioning/datasources/datasources.yml
-    ports:
-      - "3000:3000"
+    expose:
+      - "3000"
     environment:
       GF_SECURITY_ADMIN_USER: ${GF_SECURITY_ADMIN_USER}
       GF_SECURITY_ADMIN_PASSWORD: ${GF_SECURITY_ADMIN_PASSWORD}
+      GF_SERVER_ROOT_URL: https://{$DOMAIN}/monitoring
+      GF_SERVER_SERVE_FROM_SUB_PATH: "true"
     depends_on:
       - prometheus
       - loki
