@@ -119,8 +119,9 @@ services:
       - "3000"
     environment:
       GF_SERVER_DOMAIN: api.traygo.app
-#      GF_SERVER_SERVE_FROM_SUB_PATH: "true"
       GF_SERVER_ROOT_URL: https://api.traygo.app/grafana/
+      GF_SECURITY_ADMIN_USER: ${GF_SECURITY_ADMIN_USER}
+      GF_SECURITY_ADMIN_PASSWORD: ${GF_SECURITY_ADMIN_PASSWORD}
     depends_on:
       - prometheus
       - loki
