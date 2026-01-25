@@ -40,7 +40,7 @@
 	}
 
     # Grafana under /monitoring
-	handle_path /monitoring/* {
+	handle_path /monitoring* {
 		reverse_proxy grafana:3000 {
 			header_up Host {host}
 			header_up X-Real-IP {remote_host}
