@@ -10,6 +10,12 @@ receivers:
 processors:
   batch:
 
+  attributes/loki:
+    actions:
+      - action: insert
+        key: loki.resource.labels
+        value: service.name,service.namespace,service.instance.id
+
 exporters:
   otlp/jaeger:
     endpoint: "http://jaeger:4317"
@@ -39,5 +45,5 @@ service:
       exporters: [ prometheus ]
     logs:
       receivers: [ otlp ]
-      processors: [ batch ]
+      processors: [ attributes/loki, batch ]
       exporters: [ otlphttp/logs ]
