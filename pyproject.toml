@@ -1,5 +1,5 @@
 [project]
-name = ""
+name = "canteen-management-system-server"
 version = "1.0.0"
 description = "RESTful API for managing users, meals, orders, and payments for canteens."
 readme = "README.md"
