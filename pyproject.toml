@@ -30,7 +30,7 @@ dependencies = [
     "redis>=6.4.0",
     "ruff~=0.12.12",
     "sendgrid>=6.12.5",
-    "stripe~=14.0.1",
+    "stripe~=15.1.0",
 ]
 
 [dependency-groups]
