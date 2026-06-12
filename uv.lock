@@ -71,7 +71,7 @@ requires-dist = [
     { name = "django-filter", specifier = "~=25.1" },
     { name = "django-imagekit", specifier = ">=5.0.0" },
     { name = "django-sendgrid-v5", specifier = ">=1.3.1" },
-    { name = "django-unfold", specifier = ">=0.65.0" },
+    { name = "django-unfold", specifier = ">=0.96.0" },
     { name = "djangorestframework", specifier = "~=3.16.1" },
     { name = "djangorestframework-simplejwt", extras = ["crypto"], specifier = "~=5.5.1" },
     { name = "drf-spectacular", specifier = "~=0.28.0" },
@@ -468,14 +468,14 @@ wheels = [
 
 [[package]]
 name = "django-unfold"
-version = "0.76.0"
+version = "0.96.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "django" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c3/dc/041d8144fb4503dea02bd73059c842395dfc8b6e7e14e9c7e16b65a43696/django_unfold-0.76.0.tar.gz", hash = "sha256:26d556aaf0f14980f102ea680af27887ac8508085a56c5c797da28c7ca165ec8", size = 1103435, upload-time = "2026-01-12T12:10:11.943Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/cb/ba/1ae7de680a718bd47181e9f0fb1f79594686c7acaacafba0ba830482cccc/django_unfold-0.96.0.tar.gz", hash = "sha256:460bfac9a609185f130e42388f6bf64d5ccd66d2d2122f3c39ffea3f777f4e80", size = 1125879, upload-time = "2026-06-05T10:28:00.969Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b1/17/9da3c6fd822dfe9bd1ef3e2486d4994df1456cf21de91594b79b982511a6/django_unfold-0.76.0-py3-none-any.whl", hash = "sha256:4323222ec06c73f9210196646447e90d4bc7464c2c5fd16bcf722fdc9c8ed4a7", size = 1219446, upload-time = "2026-01-12T12:10:10.118Z" },
+    { url = "https://files.pythonhosted.org/packages/90/b6/fc4516755540d7e67bb45c3de8ef362c9faeb458bff249f884197d97480b/django_unfold-0.96.0-py3-none-any.whl", hash = "sha256:bad8c866a06f9cb82df565cbee2a36f9a4d3cdb52bd2bff2999aa5e16709b676", size = 1253552, upload-time = "2026-06-05T10:27:59.259Z" },
 ]
 
 [[package]]
