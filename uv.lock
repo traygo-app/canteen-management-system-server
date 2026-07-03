@@ -90,7 +90,7 @@ requires-dist = [
     { name = "redis", specifier = ">=6.4.0" },
     { name = "ruff", specifier = "~=0.12.12" },
     { name = "sendgrid", specifier = ">=6.12.5" },
-    { name = "stripe", specifier = "~=14.0.1" },
+    { name = "stripe", specifier = "~=15.3.0" },
 ]
 
 [package.metadata.requires-dev]
@@ -1444,15 +1444,15 @@ wheels = [
 
 [[package]]
 name = "stripe"
-version = "14.0.1"
+version = "15.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "requests" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/2b/49/08df0acc094587f4d76c2ab31ebbecb8a37312ab558cddaa6a4c2ff19579/stripe-14.0.1.tar.gz", hash = "sha256:f2d56345bf5d41c1f21f814b00174a3173a0b5eb4e8fc46a8f779e3d7a2efc6e", size = 1362960, upload-time = "2025-11-22T01:07:48.862Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/eb/07/aed5656b3fd89a36e80835fe62c668692ee4ebf3a935095933d03f67a47b/stripe-15.3.0.tar.gz", hash = "sha256:ff05524255f51bf7df0e5bc4a99dbd0f737afd05587b7657c82e0d99c7fc45a4", size = 1514134, upload-time = "2026-06-24T22:49:40.276Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d3/88/0db878a84d333a188714f4ade57c9ae765a14a0b81862eb133ad7864711c/stripe-14.0.1-py3-none-any.whl", hash = "sha256:ff25c5e5f085beaa98b6b9c2c729d22ad99068196cbd83fdf82669fd08311b76", size = 1970603, upload-time = "2025-11-22T01:07:47.309Z" },
+    { url = "https://files.pythonhosted.org/packages/54/f4/0dcf5bc464941132e3b109d26086a8a0aae7e4ed7e0243a1c47084b4de4b/stripe-15.3.0-py3-none-any.whl", hash = "sha256:99c427d306d9348123e73da3f4f2cae0a5732cac9b703155dba0418e32d3cf1c", size = 2172165, upload-time = "2026-06-24T22:49:38.18Z" },
 ]
 
 [[package]]
