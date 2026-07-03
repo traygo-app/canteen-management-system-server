@@ -46,7 +46,7 @@ jobs:
             type=ref,event=branch
 
       - name: Build and push Django image
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7.2.0
         with:
           context: .
           file: ./deployment/Dockerfile
@@ -68,7 +68,7 @@ jobs:
             type=ref,event=branch
 
       - name: Build and push Caddy image
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7.2.0
         with:
           context: ./deployment/caddy
           file: ./deployment/caddy/Dockerfile
